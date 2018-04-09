@@ -1,0 +1,28 @@
+{
+  "name": "bthegarty-2.0",
+  "version": "2.0.0",
+  "description": "Revamp and update my website",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bthegarty/bthegarty-2.0.git"
+  },
+  "author": "Brendan T Hegarty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bthegarty/bthegarty-2.0/issues"
+  },
+  "homepage": "https://github.com/bthegarty/bthegarty-2.0#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "nodemon": "^1.17.3",
+    "pug": "^2.0.3",
+    "sass": "^1.1.1",
+    "yarn": "^1.5.1"
+  }
+}
