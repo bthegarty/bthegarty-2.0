@@ -1,0 +1,57 @@
+html(lang='en')
+  head
+    title bthegarty 2.0
+    meta(name='viewport' content='user-scalable=0')
+    link(rel='shortcut icon' href='./styles/icon.png')
+    link(rel='stylesheet', href='./styles/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet')
+    script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
+    //-jquery must be referenced before the script using it 
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='./script.js') 
+    //-for the scroll state
+    
+  body
+    ul(id='navi' role='navigation')
+      div(class='navbar')
+        li(class='flexin')
+          a(class='btn active' href='#') Hegarty 2.0  
+            i(class='fas fa-home') 
+        li
+          a(href='#') Daily Recap (Academic) 
+            i(class='fas fa-bell') 
+        li
+          a(href='#') Daily Recap (Honors) 
+            i(class='fas fa-bell')
+        li
+          a(href='#') Daily Recap (Honors) 
+            i(class='fas fa-bell')
+
+          
+    //- start mobile nav
+    div(class='mobile-nav')
+      ul(class='mobile-list' role='navigation')
+        li(class='mobile-item')
+          a(class='active' href='#') Home  
+            i(class='fas fa-home') 
+        li(class='mobile-item')
+          a(href='#') Academic 
+            i(class='fas fa-bell') 
+        li(class='mobile-item')
+          a(href='#') Honors 
+            i(class='fas fa-bell') 
+        li(class='mobile-item')
+          a(href='#') Resources  
+            i(class='fas fa-file-archive')
+    //- end mobile nav
+    
+    //- body content
+    div(class='main')  
+      div(class='container tag-line')
+        h1 bthegarty 2.0!
+    
+
+    //- end body content
+    //- start footer
+    div(class='container footer')
+      div Brendan Hegarty

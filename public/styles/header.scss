@@ -1,0 +1,146 @@
+@import 'colors';
+
+$font: 'Roboto Condensed', sans-serif;
+
+ul{
+  padding: 0;
+}
+
+.navbar{
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  align-items: baseline;
+
+  .flexin{
+    margin-right: auto;
+    font-size: 22px;
+  }
+}
+
+.navbar a{
+  text-decoration: none;
+  display: block;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  color: $font-black;
+}
+
+.navbar a:hover{
+  color: $marist-red;
+}
+
+.active, .btn:hover{
+  color: $marist-red !important;
+}
+
+.scrolled{
+  background-color: $dark-grey;
+  transition: 0.5s;
+}
+
+.scrolled a{
+  color: $white;
+}
+
+.scrolled-drop{
+  background-color: $dark-grey;
+  transition: 0.5s;
+  color: $white;
+}
+
+.before-drop{
+  padding-right: 115px;
+}
+
+// dropdown
+.dropbtn{
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  font-family: $font;
+}
+
+.dropdown{
+  position: fixed;
+  right: 0;
+  padding-top: 10px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  width: 112px;
+  background-color: $dark-grey;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: $white;
+  }
+}
+
+.dropdown-content a:hover{
+  color: $marist-red;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover .dropbtn{
+  color: $marist-red;
+}
+
+// mobile nav support
+.mobile-nav{
+  ul{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: $dark-grey;
+
+    display: none;
+    align-items: baseline;
+    justify-content: center;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: $white;
+  }
+}
+
+.mobile-nav a:hover{
+  color: $marist-red;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 765px) {
+    .mobile-nav{
+      ul{
+        display: flex;
+      }
+    }
+    .navbar{
+      display: none;
+    }
+}
