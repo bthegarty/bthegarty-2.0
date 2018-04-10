@@ -11,22 +11,27 @@ html(lang='en')
     script(src='./script.js') 
     //-for the scroll state
     
+    //- LETS MAKE THIS SINGLE SCROLL
+    
   body
+    //- nav bar
     ul(id='navi' role='navigation')
       div(class='navbar')
         li(class='flexin')
           a(class='btn active' href='#') Hegarty 2.0  
             i(class='fas fa-home') 
         li
-          a(href='#') Daily Recap (Academic) 
+          a(href='#') About 
             i(class='fas fa-bell') 
         li
-          a(href='#') Daily Recap (Honors) 
+          a(href='#') Abroad  
             i(class='fas fa-bell')
         li
-          a(href='#') Daily Recap (Honors) 
+          a(href='#') Career  
             i(class='fas fa-bell')
-
+        li
+          a(class='end-nav' href='#') Projects  
+            i(class='fas fa-bell')
           
     //- start mobile nav
     div(class='mobile-nav')
@@ -35,13 +40,16 @@ html(lang='en')
           a(class='active' href='#') Home  
             i(class='fas fa-home') 
         li(class='mobile-item')
-          a(href='#') Academic 
+          a(href='#') About 
             i(class='fas fa-bell') 
         li(class='mobile-item')
-          a(href='#') Honors 
+          a(href='#') Abroad 
             i(class='fas fa-bell') 
         li(class='mobile-item')
-          a(href='#') Resources  
+          a(href='#') Career  
+            i(class='fas fa-file-archive')
+        li(class='mobile-item')
+          a(href='#') Projects  
             i(class='fas fa-file-archive')
     //- end mobile nav
     

@@ -39,11 +39,15 @@ ul{
 }
 
 .navbar a:hover{
-  color: $marist-red;
+  color: $gold;
 }
 
 .active, .btn:hover{
-  color: $marist-red !important;
+  color: $gold !important;
+}
+
+.end-nav{
+  padding-right: 1em;
 }
 
 .scrolled{
@@ -96,7 +100,7 @@ ul{
 }
 
 .dropdown-content a:hover{
-  color: $marist-red;
+  color: $gold;
 }
 
 .dropdown:hover .dropdown-content{
@@ -104,7 +108,7 @@ ul{
 }
 
 .dropdown:hover .dropbtn{
-  color: $marist-red;
+  color: $gold;
 }
 
 // mobile nav support
@@ -131,7 +135,7 @@ ul{
 }
 
 .mobile-nav a:hover{
-  color: $marist-red;
+  color: $gold;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 765px) {
