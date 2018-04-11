@@ -10,6 +10,17 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='./script.js') 
     //-for the scroll state
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js")
+    script.
+      $('.smooth').on('click', function() {
+          $.smoothScroll({
+              scrollElement: $('body'),
+              scrollTarget: '#' + this.id
+          });
+          
+          return false;
+      });
     
     //- LETS MAKE THIS SINGLE SCROLL
     
@@ -19,47 +30,49 @@ html(lang='en')
       div(class='navbar')
         li(class='flexin')
           a(class='btn active' href='#') Hegarty 2.0  
-            i(class='fas fa-home') 
+            i(class='fas fa-space-shuttle') 
         li
-          a(href='#') About 
-            i(class='fas fa-bell') 
+          a(href='#about') About 
+            i(class='far fa-lemon') 
         li
-          a(href='#') Abroad  
-            i(class='fas fa-bell')
+          a(href='#abroad') Abroad  
+            i(class='fas fa-globe')
         li
-          a(href='#') Career  
-            i(class='fas fa-bell')
+          a(href='#career') Career  
+            i(class='fas fa-code')
         li
-          a(class='end-nav' href='#') Projects  
-            i(class='fas fa-bell')
+          a(class='end-nav' href='#projects') Projects  
+            i(class='fas fa-code-branch')
           
     //- start mobile nav
     div(class='mobile-nav')
       ul(class='mobile-list' role='navigation')
         li(class='mobile-item')
           a(class='active' href='#') Home  
-            i(class='fas fa-home') 
+            i(class='fas fa-space-shuttle') 
         li(class='mobile-item')
-          a(href='#') About 
-            i(class='fas fa-bell') 
+          a(href='#about') About 
+            i(class='far fa-lemon') 
         li(class='mobile-item')
-          a(href='#') Abroad 
-            i(class='fas fa-bell') 
+          a(href='#abroad') Abroad 
+            i(class='fas fa-globe') 
         li(class='mobile-item')
-          a(href='#') Career  
-            i(class='fas fa-file-archive')
+          a(href='#career') Career  
+            i(class='fas fa-code')
         li(class='mobile-item')
-          a(href='#') Projects  
-            i(class='fas fa-file-archive')
+          a(href='#projects') Projects  
+            i(class='fas fa-code-branch')
     //- end mobile nav
     
     //- body content
-    div(class='main')  
-      div(class='container tag-line')
-        h1 bthegarty 2.0!
-    
+    div(class='container tag-line')
+      h1 bthegarty 2.0!
+    div(id='about')
+    div(id='abroad')
+    div(id='career')
+    div(id='projects')
 
     //- end body content
     //- start footer
     div(class='container footer')
-      div Brendan Hegarty
+      div Marist College - Brendan Hegarty - Developer
