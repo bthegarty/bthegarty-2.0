@@ -1,15 +1,26 @@
-#about{
+@import 'colors';
 
+#welcome{
+  height: 1000px;
+  background-color: $marist-red;
+}
+
+#about{
+  height: 1000px;
+  background-color: $dark-grey;
 }
 
 #abroad{
-
+  height: 1000px;
+  background-color: $marist-grey;
 }
 
 #career{
-
+  height: 1000px;
+  background-color: $gold;
 }
 
 #projects{
-  
+  height: 1000px;
+  background-color: $white;
 }
