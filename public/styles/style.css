@@ -140,19 +140,19 @@ ul {
 
 #about {
   height: 1000px;
-  background-color: #262626; }
+  background: linear-gradient(to bottom left, #262626, #ffe6e6); }
 
 #abroad {
   height: 1000px;
-  background-color: #ffe6e6; }
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); }
 
 #career {
   height: 1000px;
-  background-color: #e6c300; }
+  background: linear-gradient(141deg, #e6c300 0%, #998200 51%, #665700 85%); }
 
 #projects {
   height: 1000px;
-  background-color: #fff; }
+  background: linear-gradient(to bottom right, #e6c300, #fff); }
 
 body, html {
   background-color: #262626;

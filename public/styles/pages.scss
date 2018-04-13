@@ -7,20 +7,20 @@
 
 #about{
   height: 1000px;
-  background-color: $dark-grey;
+  background: linear-gradient(to bottom left, $dark-grey, $marist-grey);
 }
 
 #abroad{
   height: 1000px;
-  background-color: $marist-grey;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 
 #career{
   height: 1000px;
-  background-color: $gold;
+      background: linear-gradient(141deg, $gold 0%, #998200 51%,  #665700 85%);
 }
 
 #projects{
   height: 1000px;
-  background-color: $white;
+  background: linear-gradient(to bottom right, $gold, $white);
 }
