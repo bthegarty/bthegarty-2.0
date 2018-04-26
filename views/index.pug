@@ -10,18 +10,7 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='./script.js') 
     //-for the scroll state
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-    script(src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js")
-    script.
-      $('.smooth').on('click', function() {
-          $.smoothScroll({
-              scrollElement: $('body'),
-              scrollTarget: '#' + this.id
-          });
-          
-          return false;
-      });
-    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")  
     //- LETS MAKE THIS SINGLE SCROLL
     
   body
@@ -66,8 +55,20 @@ html(lang='en')
     
     //- body content
     div(id='welcome' class='container tag-line')
-      h1 bthegarty 2.0!
+      h1(class='intro') Welcome to bthegarty 2.0!
+        p Web Developer looking for love
+      div(class='scroll')
+        a(href='#about') Scroll
+          span 
     div(id='about')
+      div(class='screen college')
+        div(class='screen-text') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
+      div(class='screen lang')
+        div(class='screen-text') JavaScript, TypeScript, Java, PHP, Python, HTML5, CSS, Sass, SQL.
+      div(class='screen sports')
+        div(class='screen-text') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
+      div(class='screen music')
+        div(class='screen-text') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
     div(id='abroad')
     div(id='career')
     div(id='projects')
