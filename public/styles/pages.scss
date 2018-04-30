@@ -1,32 +1,10 @@
 @import 'colors';
 
+// welcome page
+
 #welcome{
-  height: 750px;
+  height: 725px;
   background-color: $marist-red;
-}
-
-// ill make some of these smaller and get rid of smooth scroll
-#about{
-  height: 1000px;
-  background: linear-gradient(to bottom left, $dark-grey, $marist-grey);
-  display: flex;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-#abroad{
-  height: 1000px;
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-}
-
-#career{
-  height: 1000px;
-      background: linear-gradient(141deg, $gold 0%, #998200 51%,  #665700 85%);
-}
-
-#projects{
-  height: 1000px;
-  background: linear-gradient(to bottom right, $gold, $white);
 }
 
 .intro{
@@ -40,20 +18,22 @@
 }
 
 .scroll{
-  margin-top: 14em;
+  margin-top: 13em;
   text-align: center;
   a{
     color: $white;
     text-decoration: none;
     letter-spacing: 2px;
+    z-index: 1;
   }
   span{
     text-align: center;
     padding: 10px;
   }
-  :hover{
-    color: $gold;
-  }
+}
+
+.scroll a:hover{
+  color: $gold;
 }
 
 .scroll a span{
@@ -72,6 +52,133 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+// about page
+
+#about{
+  height: 725px;
+  background-color: $marist-grey;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+// abroad page
+
+#abroad{
+  height: 656px;
+  background-color: #2cb5e8;
+}
+
+// career page
+
+#career{
+  height: 525px;
+  background-color: $gold;
+  margin: 0 auto;
+  padding: 0px 150px;
+  border-top: 1px solid $white;
+}
+
+#career-buffer{
+  height: 69px;
+  background-color: #2cb5e8;
+}
+
+#career-tag{
+  background-color: #dedecd;
+  text-align: center;
+  height: 50px;
+  padding: 50px 0px;
+  font-size: 34px;
+  justify-content: center;
+}
+
+.job-box{
+  width: 20%;
+  float: left;
+  margin-right: 20%;
+  text-align: center;
+  color: #555;
+  margin-top: -45px;
+}
+
+.last-job-box{
+  width: 20%;
+  float: left;
+  text-align: center;
+  color: #555;
+  margin-top: -45px;
+}
+
+.job-circle{
+  background-color: $gold;
+  width: 112px;
+  height: 96px;
+  padding-top: 25px;
+  margin: 0px auto;
+  border-radius: 56px;
+}
+.job-title{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $white;
+}
+
+.job-amc{
+  img{
+    height: 35px;
+    width: 70px;
+  }
+}
+
+.job-mlb, .job-bam{
+  img{
+    height: 45px;
+  }
+}
+
+.great-divide{
+  margin: 30px auto 30px auto;
+  width: 50px;
+  border-bottom: 1px solid $marist-red;
+}
+
+// projects page
+
+#projects{
+  height: 725px;
+  background-color: $white;
+}
+
+
 .screen{
   height: 33%;
   padding-left: 1em;
@@ -86,6 +193,55 @@
     color: $white;
     -webkit-font-smoothing: antialiased;
   }
+}
+
+// particles
+#particles-js {
+  position: absolute;
+  // z-index: -1;
+  width: 100%;
+  height: 100%;
+  // background-color: $marist-red;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 765px) {

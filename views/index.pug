@@ -9,6 +9,7 @@ html(lang='en')
     //-jquery must be referenced before the script using it 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='./script.js') 
+    script(src='./particles.js')
     //-for the scroll state
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")  
     //- LETS MAKE THIS SINGLE SCROLL
@@ -27,7 +28,7 @@ html(lang='en')
           a(href='#abroad') Abroad  
             i(class='fas fa-globe')
         li
-          a(href='#career') Career  
+          a(href='#career-buffer') Career  
             i(class='fas fa-code')
         li
           a(class='end-nav' href='#projects') Projects  
@@ -37,7 +38,7 @@ html(lang='en')
     div(class='mobile-nav')
       ul(class='mobile-list' role='navigation')
         li(class='mobile-item')
-          a(class='active' href='#') Home  
+          a(class='active' href='#welcome') Home  
             i(class='fas fa-space-shuttle') 
         li(class='mobile-item')
           a(href='#about') About 
@@ -46,7 +47,7 @@ html(lang='en')
           a(href='#abroad') Abroad 
             i(class='fas fa-globe') 
         li(class='mobile-item')
-          a(href='#career') Career  
+          a(href='#career-buffer') Career  
             i(class='fas fa-code')
         li(class='mobile-item')
           a(href='#projects') Projects  
@@ -54,6 +55,7 @@ html(lang='en')
     //- end mobile nav
     
     //- body content
+    div(id='particles-js')
     div(id='welcome' class='container tag-line')
       h1(class='intro') Welcome to bthegarty 2.0!
         p Web Developer looking for love
@@ -61,16 +63,37 @@ html(lang='en')
         a(href='#about') Scroll
           span 
     div(id='about')
-      div(class='screen college')
-        div(class='screen-text') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
-      div(class='screen lang')
-        div(class='screen-text') JavaScript, TypeScript, Java, PHP, Python, HTML5, CSS, Sass, SQL.
-      div(class='screen sports')
-        div(class='screen-text') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
-      div(class='screen music')
-        div(class='screen-text') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
+      //- div(class='screen college')
+        //- div(class='screen-text') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
+      //- div(class='screen lang')
+        //- div(class='screen-text') JavaScript, TypeScript, Java, PHP, Python, HTML5, CSS, Sass, SQL.
+      //- div(class='screen sports')
+        //- div(class='screen-text') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
+      //- div(class='screen music')
+        //- div(class='screen-text') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
     div(id='abroad')
+    div(id='career-buffer')
+    div(id='career-tag') Currently working for AMC as a QA Engineer and Front-End Coder
     div(id='career')
+      div(class='job-box')
+        div(class='job-mlb')
+          div(class='job-circle')
+            img(src='./styles/logos/mlb.gif' alt='MLB')
+          div(class='job-title') IT Analyst
+          div(class='great-divide')
+      div(class='job-box')
+        div(class='job-amc')
+          div(class='job-circle')
+            img(src='./styles/logos/AMC_Networks_logo.png' alt='AMC')
+          div(class='job-title') QA Engineer
+          div(class='great-divide')
+      div(class='last-job-box')
+        div(class='job-bam')
+          div(class='job-circle')
+            img(src='./styles/logos/mlb.gif' alt='BAM')
+          div(class='job-title') QA Analyst
+          div(class='great-divide') 
+      div(class='bottom-space')
     div(id='projects')
 
     //- end body content
