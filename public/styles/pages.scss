@@ -82,25 +82,83 @@
 // about page
 
 #about{
-  height: 725px;
-  background-color: $marist-grey;
+  border-top: 1px solid $white;
+  height: 656px;
+  // background-color: $marist-grey;
   display: flex;
-  padding-left: 2em;
-  padding-right: 2em;
+  color: $white;
+  text-align: center;
+  .section-1{
+    background-color: $marist-grey;
+    height: 100%;
+    width: 33.33%;
+    color: $font-black;
+    .about-divide{
+      border-bottom: 1px solid $font-black;
+    }
+  }
+
+  .section-2{
+    background-color: $red-light;
+    height: 100%;
+    width: 33.33%;
+  }
+
+  .section-3{
+    background-color: $marist-grey;
+    height: 100%;
+    width: 33.33%;
+    color: $font-black;
+    .about-divide{
+      border-bottom: 1px solid $font-black;
+    }
+  }
+}
+
+#about-buffer{
+  height: 69px;
+  background-color: $marist-red;
+}
+
+.about-img{
+  padding-top: 1em;
+  height: 75px;
+  width: 75px;
+}
+
+.about-divide{
+  margin: 30px auto 30px auto;
+  width: 75px;
+  border-bottom: 1px solid $white;
+}
+
+.college{
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 // abroad page
 
 #abroad{
   height: 656px;
-  background-color: #2cb5e8;
+  background-color: $white;
+  text-align: center;
+  display: flex;
+  border-top: 1px solid $white;
 }
+
+.ab-container{
+  height: 100%;
+  width: 50%;
+  background-color: $red;
+}
+
 
 // career page
 
 #career{
   height: 525px;
-  background-color: $gold;
+  background-color: $red-light;
   margin: 0 auto;
   padding: 0px 150px;
   border-top: 1px solid $white;
@@ -108,11 +166,12 @@
 
 #career-buffer{
   height: 69px;
-  background-color: #2cb5e8;
+  background-color: $white;
 }
 
 #career-tag{
-  background-color: #dedecd;
+  border-top: 1px solid $white;
+  background-color: $marist-grey;
   text-align: center;
   height: 50px;
   padding: 50px 0px;
@@ -121,24 +180,30 @@
 }
 
 .job-box{
-  width: 20%;
+  width: 33.33%;
   float: left;
-  margin-right: 20%;
+  // margin-right: 6%;
   text-align: center;
   color: #555;
   margin-top: -45px;
+  p{
+    color: $white;
+  }
 }
 
-.last-job-box{
-  width: 20%;
-  float: left;
-  text-align: center;
-  color: #555;
-  margin-top: -45px;
-}
+// .last-job-box{
+//   width: 33.3%;
+//   float: left;
+//   text-align: center;
+//   color: #555;
+//   margin-top: -45px;
+//   p{
+//     color: $white;
+//   }
+// }
 
 .job-circle{
-  background-color: $gold;
+  background-color: $red-light;
   width: 112px;
   height: 96px;
   padding-top: 25px;
@@ -153,9 +218,10 @@
 }
 
 .job-amc{
+  line-height: 20px;
   img{
     height: 35px;
-    width: 70px;
+    width: 80px;
   }
 }
 
@@ -167,7 +233,7 @@
 
 .great-divide{
   margin: 30px auto 30px auto;
-  width: 50px;
+  width: 75px;
   border-bottom: 1px solid $marist-red;
 }
 

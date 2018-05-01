@@ -22,7 +22,7 @@ html(lang='en')
           a(class='btn active' href='#welcome') Hegarty 2.0  
             i(class='fas fa-space-shuttle') 
         li
-          a(href='#about') About 
+          a(href='#about-buffer') About 
             i(class='far fa-lemon') 
         li
           a(href='#abroad') Abroad  
@@ -41,7 +41,7 @@ html(lang='en')
           a(class='active' href='#welcome') Home  
             i(class='fas fa-space-shuttle') 
         li(class='mobile-item')
-          a(href='#about') About 
+          a(href='#about-buffer') About 
             i(class='far fa-lemon') 
         li(class='mobile-item')
           a(href='#abroad') Abroad 
@@ -60,9 +60,23 @@ html(lang='en')
       h1(class='intro') Welcome to bthegarty 2.0!
         p Web Developer looking for love
       div(class='scroll')
-        a(href='#about') Scroll
-          span 
+        a(href='#about-buffer') Scroll
+          span
+    div(id='about-buffer') 
     div(id='about')
+      div(class='section-1')
+        img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
+        h4 hey 
+        div(class='about-divide') 
+      div(class='section-2')
+        img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
+        h4 Marist College 
+        div(class='about-divide')
+        div(class='college') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
+      div(class='section-3')
+        img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
+        h4 hey
+        div(class='about-divide')
       //- div(class='screen college')
         //- div(class='screen-text') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
       //- div(class='screen lang')
@@ -72,27 +86,32 @@ html(lang='en')
       //- div(class='screen music')
         //- div(class='screen-text') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
     div(id='abroad')
+      div(class='ab-container')
     div(id='career-buffer')
+      div(class='ab-container')
     div(id='career-tag') Currently working for AMC as a QA Engineer and Front-End Coder
     div(id='career')
-      div(class='job-box')
+      div(class='job-box') 
         div(class='job-mlb')
           div(class='job-circle')
             img(src='./styles/logos/mlb.gif' alt='MLB')
           div(class='job-title') IT Analyst
           div(class='great-divide')
+          p An intern and member of the IT team, I collected data from the 30 MLB affiliated clubs in an effort to constantly find ways to increase productivity and push clubs more towards technolgy integration.
       div(class='job-box')
         div(class='job-amc')
           div(class='job-circle')
             img(src='./styles/logos/AMC_Networks_logo.png' alt='AMC')
           div(class='job-title') QA Engineer
           div(class='great-divide')
-      div(class='last-job-box')
+          p Currently, I am a QA Engineer for Shudder and Sundance Now, two of AMC networks streaming subscription services and helped with the refreshing of both sites.
+      div(class='job-box')
         div(class='job-bam')
           div(class='job-circle')
             img(src='./styles/logos/mlb.gif' alt='BAM')
           div(class='job-title') QA Analyst
           div(class='great-divide') 
+          p A QA intern working with the MLB internal player database, I wrote SQL queries and created extensive data maps. I was a part of the MLB draft tech team from 2015-2016.
       div(class='bottom-space')
     div(id='projects')
 
