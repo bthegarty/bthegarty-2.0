@@ -151,8 +151,34 @@
   height: 100%;
   width: 50%;
   background-color: $red;
+  .ab-img{
+    padding-top: 15em;
+    height: 275px;
+    width: 275px;
+  }
 }
 
+.ab-2-con{
+  height: 100%;
+  width: 50%;
+  background-color: $white;
+  padding-top: 4em;
+  h4{
+    padding-left: 2em;
+    text-align: left;
+    p{
+      padding-left: none;
+      a{
+        color: $font-black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.learn:hover{
+  color: $marist-grey;
+}
 
 // career page
 
@@ -161,7 +187,6 @@
   background-color: $red-light;
   margin: 0 auto;
   padding: 0px 150px;
-  border-top: 1px solid $white;
 }
 
 #career-buffer{
@@ -182,7 +207,6 @@
 .job-box{
   width: 33.33%;
   float: left;
-  // margin-right: 6%;
   text-align: center;
   color: #555;
   margin-top: -45px;
@@ -190,17 +214,6 @@
     color: $white;
   }
 }
-
-// .last-job-box{
-//   width: 33.3%;
-//   float: left;
-//   text-align: center;
-//   color: #555;
-//   margin-top: -45px;
-//   p{
-//     color: $white;
-//   }
-// }
 
 .job-circle{
   background-color: $red-light;
@@ -311,9 +324,62 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 765px) {
+    #welcome{
+      .intro{
+        margin-left: 1em;
+        margin-top: 2em;
+      }
+    }
+    .scroll{
+      display: none;
+    }
+
     #about{
       display: block;
+      height: auto;
+      .section-1{
+        width: 100%;
+        height: auto;
+        padding-bottom: 5em;
+      }
+      .section-2{
+        width: 100%;
+        height: auto;
+        padding-bottom: 5em;
+      }
+      .section-3{
+        width: 100%;
+        height: auto;
+        padding-bottom: 5em;
+      }
     }
+
+    #about-buffer{
+      display: none;
+    }
+
+    #abroad{
+      padding-bottom: 5em;
+      .ab-container{
+        display: none;
+      }
+      .ab-2-con{
+        width: 100%;
+      }
+    }
+
+    #career{
+
+    }
+
+    #career-buffer{
+      display: none;
+    }
+
+    #projects{
+
+    }
+
     .screen{
       height: auto;
       padding-top: 1em;

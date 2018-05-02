@@ -41,13 +41,13 @@ html(lang='en')
           a(class='active' href='#welcome') Home  
             i(class='fas fa-space-shuttle') 
         li(class='mobile-item')
-          a(href='#about-buffer') About 
+          a(href='#about') About 
             i(class='far fa-lemon') 
         li(class='mobile-item')
           a(href='#abroad') Abroad 
             i(class='fas fa-globe') 
         li(class='mobile-item')
-          a(href='#career-buffer') Career  
+          a(href='#career-tag') Career  
             i(class='fas fa-code')
         li(class='mobile-item')
           a(href='#projects') Projects  
@@ -62,12 +62,16 @@ html(lang='en')
       div(class='scroll')
         a(href='#about-buffer') Scroll
           span
+            
     div(id='about-buffer') 
     div(id='about')
       div(class='section-1')
         img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
-        h4 hey 
-        div(class='about-divide') 
+        h4 Me 
+        div(class='about-divide')
+        div(class='college') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
+          p <!--blank space y'all-->
+        div(class='college') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
       div(class='section-2')
         img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
         h4 Marist College 
@@ -75,20 +79,28 @@ html(lang='en')
         div(class='college') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
       div(class='section-3')
         img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
-        h4 hey
+        h4 Code
         div(class='about-divide')
-      //- div(class='screen college')
-        //- div(class='screen-text') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
-      //- div(class='screen lang')
-        //- div(class='screen-text') JavaScript, TypeScript, Java, PHP, Python, HTML5, CSS, Sass, SQL.
-      //- div(class='screen sports')
-        //- div(class='screen-text') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
-      //- div(class='screen music')
-        //- div(class='screen-text') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
+        div(class='college') JavaScript, TypeScript, Java, PHP, Python, HTML5, CSS, Sass, SQL.
+
     div(id='abroad')
       div(class='ab-container')
+        img(class='ab-img' src='./styles/logos/seal.png' alt='Marist')
+      div(class='ab-2-con')
+        h4 Marist in the Dominican Republic:
+          p In 2015 I was given the oportunity to travel to Cabarete in the Dominican Republic and teach at a local puclic school. Led by Dr. Carolyn C. Matheus and Dr. Kevin M. Gaugler, myself and several of my fellow students worked to create a curriculum to teach basic computer science concepts.
+        h4 Palms Open Project:
+          p We used a small abroad service group called the Palms Open Project. Their mission is to share the culture of the DR with others who want to learn about the history and lifestyle of the nation.
+        h4 Teaching Experience:
+          p In my time there I helped teach basic concepts of coding and technology ranging from Scratch, to robotics, to raspberry pie development.
+        h4 Learn More About the Programs Here:
+          p
+            a(class='learn' href='http://www.marist.edu/compscimath/computer-science-service-learning.html' target='_blank') Marist in the DR. 
+            a(class='learn' href='http://www.palmsopenproject.com/' target='_blank') Palms Open Project.
+        
     div(id='career-buffer')
       div(class='ab-container')
+      div(class='ab-2-con')
     div(id='career-tag') Currently working for AMC as a QA Engineer and Front-End Coder
     div(id='career')
       div(class='job-box') 
@@ -113,6 +125,7 @@ html(lang='en')
           div(class='great-divide') 
           p A QA intern working with the MLB internal player database, I wrote SQL queries and created extensive data maps. I was a part of the MLB draft tech team from 2015-2016.
       div(class='bottom-space')
+        
     div(id='projects')
 
     //- end body content
