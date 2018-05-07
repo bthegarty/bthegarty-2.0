@@ -40,6 +40,10 @@ $(function() {
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 });
+//active classes
+$('#about-buffer').click(function(event) {
+  //target navbar for active
+});
 //
 particlesJS("particles-js", {
   "particles": {

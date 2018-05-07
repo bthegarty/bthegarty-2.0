@@ -29,10 +29,10 @@ ul {
   color: #000; }
 
 .navbar a:hover {
-  color: #e6c300; }
+  color: #ff6666; }
 
 .active, .btn:hover {
-  color: #e6c300 !important; }
+  color: #ff6666 !important; }
 
 .end-nav {
   padding-right: 1em; }
@@ -77,13 +77,13 @@ ul {
     color: #fff; }
 
 .dropdown-content a:hover {
-  color: #e6c300; }
+  color: #ff6666; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
 
 .dropdown:hover .dropbtn {
-  color: #e6c300; }
+  color: #ff6666; }
 
 .mobile-nav ul {
   position: fixed;
@@ -103,7 +103,7 @@ ul {
   color: #fff; }
 
 .mobile-nav a:hover {
-  color: #e6c300; }
+  color: #ff6666; }
 
 @media only screen and (min-width: 320px) and (max-width: 765px) {
   .mobile-nav ul {
@@ -201,23 +201,20 @@ ul {
   color: #fff;
   text-align: center; }
   #about .section-1 {
-    background-color: #ffcccc;
-    height: 100%;
-    width: 33.33%;
-    color: #000; }
-    #about .section-1 .about-divide {
-      border-bottom: 1px solid #000; }
-  #about .section-2 {
     background-color: #ff6666;
     height: 100%;
     width: 33.33%; }
-  #about .section-3 {
+  #about .section-2 {
     background-color: #ffcccc;
     height: 100%;
     width: 33.33%;
     color: #000; }
-    #about .section-3 .about-divide {
+    #about .section-2 .about-divide {
       border-bottom: 1px solid #000; }
+  #about .section-3 {
+    background-color: #ff6666;
+    height: 100%;
+    width: 33.33%; }
 
 #about-buffer {
   height: 69px;
@@ -235,7 +232,8 @@ ul {
 
 .college {
   padding-left: 1em;
-  padding-right: 1em; }
+  padding-right: 1em;
+  font-size: 24px; }
 
 #abroad {
   height: 656px;
@@ -296,7 +294,8 @@ ul {
   color: #555;
   margin-top: -45px; }
   .job-box p {
-    color: #fff; }
+    color: #fff;
+    font-size: 24px; }
 
 .job-circle {
   background-color: #ff6666;
@@ -307,7 +306,7 @@ ul {
   border-radius: 56px; }
 
 .job-title {
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff; }
@@ -416,6 +415,10 @@ ul {
       display: none; }
     #abroad .ab-2-con {
       width: 100%; }
+
+  #career p {
+    padding-left: 5px;
+    padding-right: 5px; }
 
   #career-buffer {
     display: none; }
