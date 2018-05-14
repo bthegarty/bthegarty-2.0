@@ -15,24 +15,22 @@ $(function(){
     }
   });
 });
-// drop scroll
+// end scroll
+// active
 $(function(){
-  var header =  $('.dropbtn');
+  var header =  $('#welcome');
 
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if(scroll >= 50){
-      header.addClass('scrolled-drop');
-    }
-    else if(scroll < 50){
-      header.removeClass('scrolled-drop');
+    if(scroll <= 50){
+      header.removeClass('active');
     }
     else{
-      hearder.removeClass('scrolled-drop');
+      hearder.removeClass('active');
     }
   });
 });
-// end scroll
+//end active
 //scroll animation
 $(function() {
   $('a[href*=#]').on('click', function(e) {
