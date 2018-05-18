@@ -16,7 +16,7 @@ html(lang='en')
     
   body
     //- nav bar
-    ul(class='navbar')
+    div(class='navbar')
         li(class='flexin')
           a(class='btn active' href='#welcome') Hegarty 2.0  
             i(class='fas fa-space-shuttle' data-fa-transform="rotate-270") 
@@ -54,14 +54,24 @@ html(lang='en')
     //- end mobile nav
     
     //- body content
-    div(id='particles-js')
     div(id='welcome' class='container tag-line')
       h1(class='intro animate-reveal animate-first') Welcome to bthegarty 2.0!
         p(class='animate-reveal animate-second') Web Developer looking for love
       div(class='scroll')
         a(href='#about-buffer') Scroll
           span
-            
+      ul(class='bg-bubbles')
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+        li
+              
     div(id='about-buffer') 
     div(id='about')
       div(class='section-1')
@@ -75,7 +85,7 @@ html(lang='en')
         div(class='about-divide')
         div(class='college') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
           p <!--blank space y'all-->
-        div(class='college') Music is a large part of my life and who I am. I am classically trained in the violin (15 years), and the piano (4 years). I also play guitar in my spare time.
+        div(class='college') Music is a large part of my life and who I am. I started playing the violin at 7 and have used the same insturment for the last 12 years. I also play guitar and piano in my spare time.
       div(class='section-3')
         img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
         h3 Code
@@ -126,7 +136,60 @@ html(lang='en')
       div(class='bottom-space')
         
     div(id='projects')
-      //- somewhere needs to have social links aside from footer. maybe bottom half of about spaning across the div 
+      //- add a similar class with large square boxes above circular buttons
+      div(class='projects-box')
+        div(class='boxes') 
+          div(class='label')
+            span
+              i(class='fas fa-terminal')
+          p Made for a psuedo JS language and written in JS this project was a final test of skill my senior year of college.
+        div(class='white-space')
+        div(class='boxes')
+          div(class='label')
+            span
+              i(class='fab fa-github-alt')
+          p My git houses all of my public projects including the old versions of this website, my compiler, and several test repos.
+        div(class='white-space')
+        div(class='boxes') 
+          div(class='label')
+            span
+              i(class='fas fa-bed')  
+          p Pretty sure I'll put Windham Manor here
+      div(class='projects-container')
+        a(target='_blank' href='https://bthegarty.github.io/') Compiler
+        div(class='white-space')
+        a(target='_blank' href='https://github.com/bthegarty') GitHub
+        div(class='white-space')
+        a(href='#') Windham Manor
+      //- add shudder and sundance and something else
+      div(class='projects-box')
+        div(class='boxes') 
+          div(class='label')
+            span
+              img(src='./styles/logos/shudder.webp' alt='shudder')
+          p A horror/thriller streaming service where I am the main Web QA and fix UI bugs for the new Shudder. 
+        div(class='white-space')
+        div(class='boxes')
+          div(class='label')
+            span
+              img(class='sn' src='./styles/logos/sundance.png' alt='sundance')
+          p Documentaries and Film Festival hits. The sister service to Shudder where I am also the main Web Team QA.
+        div(class='white-space')
+        div(class='boxes') 
+          div(class='label')
+            span
+              i(class='fas fa-graduation-cap')  
+          p I dont really know what goes here yet
+      div(class='projects-container')
+        a(target='_blank' href='https://www.shudder.com/') Shudder
+        div(class='white-space')
+        a(target='_blank' href='https://www.sundancenow.com/') Sundance Now
+        div(class='white-space')
+        a(href='#') Other
+    //- I think rewrite these with a display none for mobile view. It's to complex as is  
+      
+    //- div(class='bottom-tag')
+      div(class='goodbye') See a balk is when you make a... okay it's actually any motion that goes towrads. I need to just start over
 
     //- end body content
     //- start footer
