@@ -365,7 +365,8 @@ ul {
       #projects .projects-box .boxes p {
         padding: 0 10px; }
       #projects .projects-box .boxes img {
-        height: 12px; }
+        height: 12px;
+        padding: 0 3px; }
       #projects .projects-box .boxes .sn {
         height: 12px; }
   #projects .projects-container {
@@ -387,6 +388,11 @@ ul {
       background-color: #262626;
       border: 2px solid #e31936;
       transition: 0.5s; }
+    #projects .projects-container .shudder {
+      margin: 0; }
+    #projects .projects-container .shudder:hover {
+      -webkit-animation: shake .1s infinite ease-in-out;
+      animation: shake .1s infinite ease-in-out; }
   #projects .white-space {
     width: 50px; }
 
@@ -472,16 +478,34 @@ ul {
       height: 160px;
       animation-delay: 11s; }
 
-@-webkit-keyframes square {
-  0% {
-    transform: translateY(0); }
-  100% {
-    transform: translateY(-700px) rotate(600deg); } }
 @keyframes square {
   0% {
     transform: translateY(0); }
   100% {
     transform: translateY(-700px) rotate(600deg); } }
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(2px, 1px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-2px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
 @media only screen and (min-width: 320px) and (max-width: 765px) {
   #welcome .intro {
     margin-left: 1em;
