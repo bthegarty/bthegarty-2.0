@@ -6,14 +6,6 @@ ul{
   padding: 0;
 }
 
-.fa-rotate-45 {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
 .navbar{
   list-style: none;
   margin: 0;
@@ -22,7 +14,7 @@ ul{
   top: 0;
   width: 100%;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 999;
 
   display: -webkit-box;
   display: -moz-box;
@@ -143,18 +135,21 @@ ul{
   }
 }
 
-.mobile-nav a:hover{
-  color: $red-light;
-}
 
 @media only screen and (min-width: 320px) and (max-width: 765px) {
     .mobile-nav{
       ul{
         display: flex;
-        z-index: 1;
+        z-index: 999;
       }
     }
     .navbar{
       display: none;
     }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .navbar a{
+    display: none;
+  }
 }

@@ -15,7 +15,7 @@ router.get('/',function(req, res){
 });
 
 app.use('*',function(req, res){
-  res.send('Error 404: Not Found!');
+  res.send("Error 404: Well golly, I'm not really sure how you got here");
 });
 
 app.listen(4002,function(){
