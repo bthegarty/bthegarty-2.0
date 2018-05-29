@@ -259,6 +259,7 @@
 #projects{
   padding-top: 80px;
   height: 576px;
+  // background-image: url(./logos/background.jpg);
   background-color: $white;
   text-align: center;
   .inner-btn{
@@ -454,7 +455,8 @@
 	}
 }
 
-// @-webkit-keyframes square {
+//for spinning the compainion cube
+//  @-webkit-keyframes square {
 //   0%   { transform: translateY(0); }
 //   100% { transform: translateY(-700px) rotate(600deg); }
 // }
@@ -646,6 +648,22 @@
       background-color: $marist-grey;
       border-radius: 8px;
       padding-bottom: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 550px) {
+  #projects{
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+  #projects{
+    p{
+      font-size: 12px;
     }
   }
 }

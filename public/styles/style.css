@@ -617,6 +617,12 @@ ul {
       background-color: #ffcccc;
       border-radius: 8px;
       padding-bottom: 1em; } }
+@media only screen and (min-width: 400px) and (max-width: 550px) {
+  #projects p {
+    font-size: 14px; } }
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+  #projects p {
+    font-size: 12px; } }
 .animate-reveal {
   letter-spacing: 2px;
   opacity: 0;
