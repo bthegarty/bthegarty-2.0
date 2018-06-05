@@ -1,1 +1,1 @@
-app: start
+web: start
