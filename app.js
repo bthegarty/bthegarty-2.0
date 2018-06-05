@@ -18,6 +18,6 @@ app.use('*',function(req, res){
   res.send("Error 404: Well golly, I'm not really sure how you got here");
 });
 
-app.listen(4002,function(){
-  console.log('Server running at Port 4002');
+app.listen(8080,function(){
+  console.log('Server running at Port 8080');
 });
