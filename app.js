@@ -14,7 +14,7 @@ router.get('/',function(req, res){
   res.render('index');
 });
 
-app.use('*',function(req, res){
+app.use('/not-found',function(req, res){
   res.send("Error 404: Well golly, I'm not really sure how you got here");
 });
 
