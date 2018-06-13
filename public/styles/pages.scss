@@ -84,7 +84,7 @@
 
 // about page
 
-#about{
+#about-page{
   border-top: 1px solid $white;
   height: 656px;
   // background-color: $marist-grey;
@@ -114,8 +114,8 @@
     width: 33.33%;
   }
 }
-
-#about-buffer{
+//buffer
+#about{
   height: 69px;
   background-color: $marist-red;
 }
@@ -184,14 +184,15 @@
 
 // career page
 
-#career{
+#career-page{
   height: 525px;
   background-color: $red-light;
   margin: 0 auto;
   padding: 0px 150px;
 }
 
-#career-buffer{
+//buffer
+#career{
   height: 69px;
   background-color: $white;
 }
@@ -514,7 +515,7 @@
       display: none;
     }
 
-    #about{
+    #about-page{
       display: block;
       height: auto;
       .section-1{
@@ -534,7 +535,7 @@
       }
     }
 
-    #about-buffer{
+    #about{
       display: none;
     }
 
@@ -549,7 +550,7 @@
     }
 
 
-    #career-buffer{
+    #career{
       display: none;
     }
 
@@ -571,9 +572,7 @@
     }
 
     #projects{
-      height: auto;
-      padding-top: 80px;
-      padding-bottom: 80px;
+      height: -webkit-fill-available;
       .projects-box{
         justify-content: center;
         align-items: center;
@@ -603,7 +602,7 @@
         color: $dark-grey;
       }
     }
-    #career{
+    #career-page{
       padding: 0;
       padding-bottom: 2em;
       height: auto;
@@ -643,124 +642,11 @@
 }
 
 @media only screen and (min-width: 1055px) and (max-width: 1250px) {
-  #career{
+  #career-page{
     .job-box{
       p{
         font-size: 18px;
       }
-    }
-  }
-}
-
-@media only screen and (min-width: 100px) and (max-width: 1055px) {
-  #welcome{
-    .bg-bubbles{
-      height: 100%;
-      li{
-        &:nth-child(2){
-          display: none;
-        }
-
-        &:nth-child(6){
-          display: none;
-        }
-
-        &:nth-child(7){
-          display: none;
-        }
-
-        &:nth-child(8){
-          display: none;
-        }
-      }
-    }
-  }
-
-  #projects{
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    .projects-box{
-      justify-content: center;
-      align-items: center;
-      padding-left: 2em;
-      padding-right: 2em;
-    }
-    .boxes{
-      width: 75% !important;
-      height: 25% !important;
-    }
-    .projects-container{
-      display: none;
-    }
-    .inner-btn{
-      align-items: baseline;
-      display: block;
-      height: 30px;
-      border-radius: 45px;
-      border: 2px solid $marist-red;
-      text-decoration: none;
-      color: $white;
-      padding-top: 10px;
-      // box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-    }
-    .inner-btn:hover{
-      background-color: $white;
-      color: $dark-grey;
-    }
-  }
-
-  #career{
-    padding: 0;
-    padding-bottom: 2em;
-    height: auto;
-    .job-box{
-      width: auto;
-      float: none;
-      padding-top: 2em;
-      margin-top: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .job-circle{
-      background-color: $marist-grey;
-    }
-    .job-mlb{
-      width: 90%;
-      background-color: $marist-grey;
-      border-radius: 8px;
-      padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-    }
-    .job-amc{
-      width: 90%;
-      background-color: $marist-grey;
-      border-radius: 8px;
-      padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-    }
-    .job-bam{
-      width: 90%;
-      background-color: $marist-grey;
-      border-radius: 8px;
-      padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-    }
-  }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 550px) {
-  #projects{
-    p{
-      font-size: 14px;
-    }
-  }
-}
-
-@media only screen and (min-width: 200px) and (max-width: 399px) {
-  #projects{
-    p{
-      font-size: 12px;
     }
   }
 }

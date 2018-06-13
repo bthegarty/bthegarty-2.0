@@ -204,30 +204,30 @@ ul {
   100% {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0; } }
-#about {
+#about-page {
   border-top: 1px solid #fff;
   height: 656px;
   display: flex;
   color: #fff;
   text-align: center;
   line-height: 1.2; }
-  #about .section-1 {
+  #about-page .section-1 {
     background-color: #ff6666;
     height: 100%;
     width: 33.33%; }
-  #about .section-2 {
+  #about-page .section-2 {
     background-color: #ffcccc;
     height: 100%;
     width: 33.33%;
     color: #000; }
-    #about .section-2 .about-divide {
+    #about-page .section-2 .about-divide {
       border-bottom: 1px solid #000; }
-  #about .section-3 {
+  #about-page .section-3 {
     background-color: #ff6666;
     height: 100%;
     width: 33.33%; }
 
-#about-buffer {
+#about {
   height: 69px;
   background-color: #e31936; }
 
@@ -280,13 +280,13 @@ ul {
 .learn:hover {
   color: #ffcccc; }
 
-#career {
+#career-page {
   height: 525px;
   background-color: #ff6666;
   margin: 0 auto;
   padding: 0px 150px; }
 
-#career-buffer {
+#career {
   height: 69px;
   background-color: #fff; }
 
@@ -525,23 +525,23 @@ ul {
   .scroll {
     display: none; }
 
-  #about {
+  #about-page {
     display: block;
     height: auto; }
-    #about .section-1 {
+    #about-page .section-1 {
       width: 100%;
       height: auto;
       padding-bottom: 5em; }
-    #about .section-2 {
+    #about-page .section-2 {
       width: 100%;
       height: auto;
       padding-bottom: 5em; }
-    #about .section-3 {
+    #about-page .section-3 {
       width: 100%;
       height: auto;
       padding-bottom: 5em; }
 
-  #about-buffer {
+  #about {
     display: none; }
 
   #abroad {
@@ -551,7 +551,7 @@ ul {
     #abroad .ab-2-con {
       width: 100%; }
 
-  #career-buffer {
+  #career {
     display: none; }
 
   #career-tag {
@@ -568,9 +568,7 @@ ul {
     display: none !important; }
 
   #projects {
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 80px; }
+    height: -webkit-fill-available; }
     #projects .projects-box {
       justify-content: center;
       align-items: center;
@@ -594,116 +592,40 @@ ul {
       background-color: #fff;
       color: #262626; }
 
-  #career {
+  #career-page {
     padding: 0;
     padding-bottom: 2em;
     height: auto; }
-    #career .job-box {
+    #career-page .job-box {
       width: auto;
       float: none;
       padding-top: 2em;
       margin-top: 0;
       display: flex;
       justify-content: center; }
-    #career .job-circle {
+    #career-page .job-circle {
       background-color: #ffcccc; }
-    #career .job-mlb {
+    #career-page .job-mlb {
       width: 90%;
       background-color: #ffcccc;
       border-radius: 8px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
-    #career .job-amc {
+    #career-page .job-amc {
       width: 90%;
       background-color: #ffcccc;
       border-radius: 8px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
-    #career .job-bam {
+    #career-page .job-bam {
       width: 90%;
       background-color: #ffcccc;
       border-radius: 8px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); } }
 @media only screen and (min-width: 1055px) and (max-width: 1250px) {
-  #career .job-box p {
+  #career-page .job-box p {
     font-size: 18px; } }
-@media only screen and (min-width: 100px) and (max-width: 1055px) {
-  #welcome .bg-bubbles {
-    height: 100%; }
-    #welcome .bg-bubbles li:nth-child(2) {
-      display: none; }
-    #welcome .bg-bubbles li:nth-child(6) {
-      display: none; }
-    #welcome .bg-bubbles li:nth-child(7) {
-      display: none; }
-    #welcome .bg-bubbles li:nth-child(8) {
-      display: none; }
-
-  #projects {
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 80px; }
-    #projects .projects-box {
-      justify-content: center;
-      align-items: center;
-      padding-left: 2em;
-      padding-right: 2em; }
-    #projects .boxes {
-      width: 75% !important;
-      height: 25% !important; }
-    #projects .projects-container {
-      display: none; }
-    #projects .inner-btn {
-      align-items: baseline;
-      display: block;
-      height: 30px;
-      border-radius: 45px;
-      border: 2px solid #e31936;
-      text-decoration: none;
-      color: #fff;
-      padding-top: 10px; }
-    #projects .inner-btn:hover {
-      background-color: #fff;
-      color: #262626; }
-
-  #career {
-    padding: 0;
-    padding-bottom: 2em;
-    height: auto; }
-    #career .job-box {
-      width: auto;
-      float: none;
-      padding-top: 2em;
-      margin-top: 0;
-      display: flex;
-      justify-content: center; }
-    #career .job-circle {
-      background-color: #ffcccc; }
-    #career .job-mlb {
-      width: 90%;
-      background-color: #ffcccc;
-      border-radius: 8px;
-      padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
-    #career .job-amc {
-      width: 90%;
-      background-color: #ffcccc;
-      border-radius: 8px;
-      padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
-    #career .job-bam {
-      width: 90%;
-      background-color: #ffcccc;
-      border-radius: 8px;
-      padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); } }
-@media only screen and (min-width: 400px) and (max-width: 550px) {
-  #projects p {
-    font-size: 14px; } }
-@media only screen and (min-width: 200px) and (max-width: 399px) {
-  #projects p {
-    font-size: 12px; } }
 .animate-reveal {
   letter-spacing: 2px;
   opacity: 0;
