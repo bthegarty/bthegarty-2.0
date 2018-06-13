@@ -1,10 +1,10 @@
 var express = require('express');
 var pug = require('pug');
 var app = express();
-var $ = require('jQuery');
+// var $ = require('jQuery');
 var router = express.Router();
 var path = require('path');
-app.use(express.static(path.join(__dirname, 'nodemodules')));
+var port = process.env.PORT || 8080
 
 app.use('/',router);
 app.set('view engine', 'pug');
