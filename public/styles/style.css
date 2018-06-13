@@ -266,7 +266,7 @@ ul {
     width: 275px; }
 
 .ab-2-con {
-  height: 100%;
+  height: auto;
   width: 50%;
   background-color: #fff;
   padding-top: 4em; }
@@ -540,14 +540,13 @@ ul {
     display: none; }
 
   #abroad {
-    height: -webkit-fill-available; }
+    height: auto; }
     #abroad .ab-container {
       height: auto;
       display: flex;
       justify-content: center; }
     #abroad .ab-2-con {
-      width: 100%;
-      padding-top: 25%; }
+      width: 100%; }
     #abroad h4 {
       font-size: 44px; }
     #abroad p {
