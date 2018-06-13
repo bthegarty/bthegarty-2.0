@@ -109,7 +109,7 @@ ul {
   font-size: 30px;
   padding: 10px; }
 
-@media only screen and (min-width: 320px) and (max-width: 1065px) {
+@media only screen and (min-width: 320px) and (max-width: 1020px) {
   .mobile-nav ul {
     display: flex;
     z-index: 999; }
@@ -140,7 +140,7 @@ ul {
   color: #ffcccc;
   transition: color 0.3s linear; }
 
-@media only screen and (min-width: 320px) and (max-width: 1065px) {
+@media only screen and (min-width: 320px) and (max-width: 1020px) {
   .footer {
     display: none; } }
 #welcome {
@@ -252,6 +252,9 @@ ul {
   text-align: center;
   display: flex;
   border-top: 1px solid #fff; }
+
+.triangle {
+  display: none; }
 
 .ab-container {
   height: 100%;
@@ -503,7 +506,7 @@ ul {
     transform: translate(0px, 1px) rotate(0deg); }
   100% {
     transform: translate(0px, -1px) rotate(-1deg); } }
-@media only screen and (min-width: 320px) and (max-width: 1065px) {
+@media only screen and (min-width: 320px) and (max-width: 1020px) {
   #welcome {
     height: -webkit-fill-available; }
     #welcome .intro {
@@ -511,16 +514,8 @@ ul {
       margin-top: 8em; }
     #welcome p {
       font-size: 24px; }
-    #welcome .bg-bubbles {
-      height: 100%; }
-      #welcome .bg-bubbles li:nth-child(2) {
-        display: none; }
-      #welcome .bg-bubbles li:nth-child(6) {
-        display: none; }
-      #welcome .bg-bubbles li:nth-child(7) {
-        display: none; }
-      #welcome .bg-bubbles li:nth-child(8) {
-        display: none; }
+    #welcome .bg-bubbles li {
+      display: none; }
 
   .scroll {
     display: none; }
@@ -545,11 +540,36 @@ ul {
     display: none; }
 
   #abroad {
-    padding-bottom: 5em; }
+    height: -webkit-fill-available; }
     #abroad .ab-container {
-      display: none; }
+      height: auto;
+      display: flex;
+      justify-content: center; }
     #abroad .ab-2-con {
-      width: 100%; }
+      width: 100%;
+      padding-top: 25%; }
+    #abroad h4 {
+      font-size: 44px; }
+    #abroad p {
+      font-size: 34px; }
+    #abroad img {
+      align-items: center;
+      justify-content: center;
+      padding: 0; }
+    #abroad .img-align {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #abroad .triangle-align {
+      display: inline-flex;
+      align-items: flex-end; }
+    #abroad .triangle {
+      border-left: 165px solid transparent;
+      border-right: 165px solid transparent;
+      border-bottom: 100px solid #fff;
+      position: absolute;
+      display: block;
+      left: 0; }
 
   #career {
     display: none; }
@@ -575,8 +595,7 @@ ul {
       padding-left: 2em;
       padding-right: 2em; }
     #projects .boxes {
-      width: 75% !important;
-      height: 25% !important; }
+      width: 100% !important; }
     #projects .projects-container {
       display: none; }
     #projects .inner-btn {
@@ -608,19 +627,19 @@ ul {
     #career-page .job-mlb {
       width: 90%;
       background-color: #ffcccc;
-      border-radius: 8px;
+      border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
     #career-page .job-amc {
       width: 90%;
       background-color: #ffcccc;
-      border-radius: 8px;
+      border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
     #career-page .job-bam {
       width: 90%;
       background-color: #ffcccc;
-      border-radius: 8px;
+      border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); } }
 @media only screen and (min-width: 1055px) and (max-width: 1250px) {
