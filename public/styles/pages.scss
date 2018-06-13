@@ -481,14 +481,33 @@
 
 @media only screen and (min-width: 320px) and (max-width: 1065px) {
     #welcome{
-      height: 650px;
+      height: -webkit-fill-available;
       .intro{
         margin-left: 1em;
         margin-top: 8em;
-        font-size: 30px;
       }
       p{
         font-size: 24px;
+      }
+      .bg-bubbles{
+        height: 100%;
+        li{
+          &:nth-child(2){
+            display: none;
+          }
+
+          &:nth-child(6){
+            display: none;
+          }
+
+          &:nth-child(7){
+            display: none;
+          }
+
+          &:nth-child(8){
+            display: none;
+          }
+        }
       }
     }
     .scroll{
@@ -549,6 +568,77 @@
     }
     .inner-btn{
       display: none !important;
+    }
+
+    #projects{
+      height: auto;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      .projects-box{
+        justify-content: center;
+        align-items: center;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      .boxes{
+        width: 75% !important;
+        height: 25% !important;
+      }
+      .projects-container{
+        display: none;
+      }
+      .inner-btn{
+        align-items: baseline;
+        display: block;
+        height: 30px;
+        border-radius: 45px;
+        border: 2px solid $marist-red;
+        text-decoration: none;
+        color: $white;
+        padding-top: 10px;
+        // box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+      }
+      .inner-btn:hover{
+        background-color: $white;
+        color: $dark-grey;
+      }
+    }
+    #career{
+      padding: 0;
+      padding-bottom: 2em;
+      height: auto;
+      .job-box{
+        width: auto;
+        float: none;
+        padding-top: 2em;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .job-circle{
+        background-color: $marist-grey;
+      }
+      .job-mlb{
+        width: 90%;
+        background-color: $marist-grey;
+        border-radius: 8px;
+        padding-bottom: 1em;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+      }
+      .job-amc{
+        width: 90%;
+        background-color: $marist-grey;
+        border-radius: 8px;
+        padding-bottom: 1em;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+      }
+      .job-bam{
+        width: 90%;
+        background-color: $marist-grey;
+        border-radius: 8px;
+        padding-bottom: 1em;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+      }
     }
 }
 

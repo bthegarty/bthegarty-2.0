@@ -99,10 +99,11 @@ ul {
 .mobile-nav a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 2em;
+  font-size: 24px;
   color: #fff; }
 
-@media only screen and (min-width: 320px) and (max-width: 765px) {
+@media only screen and (min-width: 320px) and (max-width: 1065px) {
   .mobile-nav ul {
     display: flex;
     z-index: 999; }
@@ -498,13 +499,22 @@ ul {
     transform: translate(0px, -1px) rotate(-1deg); } }
 @media only screen and (min-width: 320px) and (max-width: 1065px) {
   #welcome {
-    height: 650px; }
+    height: -webkit-fill-available; }
     #welcome .intro {
       margin-left: 1em;
-      margin-top: 8em;
-      font-size: 30px; }
+      margin-top: 8em; }
     #welcome p {
       font-size: 24px; }
+    #welcome .bg-bubbles {
+      height: 100%; }
+      #welcome .bg-bubbles li:nth-child(2) {
+        display: none; }
+      #welcome .bg-bubbles li:nth-child(6) {
+        display: none; }
+      #welcome .bg-bubbles li:nth-child(7) {
+        display: none; }
+      #welcome .bg-bubbles li:nth-child(8) {
+        display: none; }
 
   .scroll {
     display: none; }
@@ -549,7 +559,66 @@ ul {
     bottom: 90; }
 
   .inner-btn {
-    display: none !important; } }
+    display: none !important; }
+
+  #projects {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    #projects .projects-box {
+      justify-content: center;
+      align-items: center;
+      padding-left: 2em;
+      padding-right: 2em; }
+    #projects .boxes {
+      width: 75% !important;
+      height: 25% !important; }
+    #projects .projects-container {
+      display: none; }
+    #projects .inner-btn {
+      align-items: baseline;
+      display: block;
+      height: 30px;
+      border-radius: 45px;
+      border: 2px solid #e31936;
+      text-decoration: none;
+      color: #fff;
+      padding-top: 10px; }
+    #projects .inner-btn:hover {
+      background-color: #fff;
+      color: #262626; }
+
+  #career {
+    padding: 0;
+    padding-bottom: 2em;
+    height: auto; }
+    #career .job-box {
+      width: auto;
+      float: none;
+      padding-top: 2em;
+      margin-top: 0;
+      display: flex;
+      justify-content: center; }
+    #career .job-circle {
+      background-color: #ffcccc; }
+    #career .job-mlb {
+      width: 90%;
+      background-color: #ffcccc;
+      border-radius: 8px;
+      padding-bottom: 1em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+    #career .job-amc {
+      width: 90%;
+      background-color: #ffcccc;
+      border-radius: 8px;
+      padding-bottom: 1em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+    #career .job-bam {
+      width: 90%;
+      background-color: #ffcccc;
+      border-radius: 8px;
+      padding-bottom: 1em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); } }
 @media only screen and (min-width: 1055px) and (max-width: 1250px) {
   #career .job-box p {
     font-size: 18px; } }
