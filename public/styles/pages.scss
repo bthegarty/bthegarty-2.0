@@ -501,12 +501,12 @@
     #welcome{
       height: -webkit-fill-available;
       .intro{
-        margin-left: .25em;
-        margin-right: .25em;
-        margin-top: 2em;
+        margin-left: 0;
+        text-align: center;
         font-size: 94px;
       }
       p{
+        margin-left: 0;
         font-size: 64px;
       }
       .bg-bubbles{
@@ -669,6 +669,9 @@
       padding: 0;
       padding-bottom: 2em;
       height: auto;
+      p{
+        color: $font-black !important;
+      }
       .job-box{
         width: auto;
         float: none;
@@ -686,6 +689,9 @@
         border-radius: 16px;
         padding-bottom: 1em;
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+        img{
+          height: 75px;
+        }
       }
       .job-amc{
         width: 90%;
@@ -693,6 +699,10 @@
         border-radius: 16px;
         padding-bottom: 1em;
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+        img{
+          height: 55px;
+          width: 140px;
+        }
       }
       .job-bam{
         width: 90%;
@@ -700,7 +710,13 @@
         border-radius: 16px;
         padding-bottom: 1em;
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+        img{
+          height: 75px;
+        }
       }
+    }
+    .job-title{
+      color: $font-black;
     }
 }
 

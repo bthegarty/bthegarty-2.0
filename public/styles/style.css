@@ -516,11 +516,11 @@ ul {
   #welcome {
     height: -webkit-fill-available; }
     #welcome .intro {
-      margin-left: .25em;
-      margin-right: .25em;
-      margin-top: 2em;
+      margin-left: 0;
+      text-align: center;
       font-size: 94px; }
     #welcome p {
+      margin-left: 0;
       font-size: 64px; }
     #welcome .bg-bubbles li {
       display: none; }
@@ -641,6 +641,8 @@ ul {
     padding: 0;
     padding-bottom: 2em;
     height: auto; }
+    #career-page p {
+      color: #000 !important; }
     #career-page .job-box {
       width: auto;
       float: none;
@@ -656,18 +658,28 @@ ul {
       border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+      #career-page .job-mlb img {
+        height: 75px; }
     #career-page .job-amc {
       width: 90%;
       background-color: #ffcccc;
       border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+      #career-page .job-amc img {
+        height: 55px;
+        width: 140px; }
     #career-page .job-bam {
       width: 90%;
       background-color: #ffcccc;
       border-radius: 16px;
       padding-bottom: 1em;
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); } }
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+      #career-page .job-bam img {
+        height: 75px; }
+
+  .job-title {
+    color: #000; } }
 @media only screen and (min-width: 1055px) and (max-width: 1250px) {
   #career-page .job-box p {
     font-size: 18px; } }
