@@ -501,12 +501,13 @@
     #welcome{
       height: -webkit-fill-available;
       .intro{
-        margin-left: 1em;
-        margin-top: 8em;
-        font-size: 74px;
+        margin-left: .5em;
+        margin-right: .5em;
+        margin-top: 4em;
+        font-size: 94px;
       }
       p{
-        font-size: 44px;
+        font-size: 64px;
       }
       .bg-bubbles{
         li{
@@ -519,7 +520,7 @@
         display: grid;
         a{
           padding: 1.5em;
-          font-size: 24px;
+          font-size: 34px;
           color: $font-black;
         }
         .link{
