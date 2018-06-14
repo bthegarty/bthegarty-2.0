@@ -490,9 +490,10 @@
       .intro{
         margin-left: 1em;
         margin-top: 8em;
+        font-size: 74px;
       }
       p{
-        font-size: 24px;
+        font-size: 44px;
       }
       .bg-bubbles{
         li{
@@ -516,11 +517,17 @@
         width: 100%;
         height: auto;
         padding-bottom: 5em;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
       }
       .section-3{
         width: 100%;
         height: auto;
         padding-bottom: 5em;
+      }
+      .about-img{
+        height: 175px;
+        width: 175px;
       }
     }
 
@@ -561,6 +568,7 @@
         align-items: flex-end;
       }
       .triangle{
+        z-index: 2;
       	border-left: 165px solid transparent;
       	border-right: 165px solid transparent;
       	border-bottom: 100px solid $white;
