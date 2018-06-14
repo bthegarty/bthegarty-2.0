@@ -106,7 +106,7 @@ ul {
   color: #fff;
   padding: 3em; }
 .mobile-nav svg {
-  font-size: 30px;
+  font-size: 44px;
   padding: 10px; }
 
 @media only screen and (min-width: 320px) and (max-width: 1020px) {
@@ -147,19 +147,16 @@ ul {
   height: 725px;
   background-color: #e31936; }
 
-.content-container {
-  z-index: 2; }
-  .content-container .intro {
-    margin-left: 3em;
-    margin-top: 4em;
-    transform: translateY(85px); }
-    .content-container .intro p {
-      margin-left: 1em;
-      font-size: 44px; }
+.content-container .intro {
+  margin-left: 3em;
+  margin-top: 4em;
+  transform: translateY(85px); }
+  .content-container .intro p {
+    margin-left: 1em;
+    font-size: 44px; }
 
 .social-home {
-  text-align: center;
-  z-index: 1; }
+  text-align: center; }
   .social-home a {
     padding: 1.5em;
     font-size: 24px;
@@ -173,8 +170,7 @@ ul {
   .scroll a {
     color: #fff;
     text-decoration: none;
-    letter-spacing: 2px;
-    z-index: 1; }
+    letter-spacing: 2px; }
   .scroll span {
     text-align: center;
     padding: 10px; }
@@ -594,7 +590,6 @@ ul {
       display: inline-flex;
       align-items: flex-end; }
     #abroad .triangle {
-      z-index: 2;
       border-left: 165px solid transparent;
       border-right: 165px solid transparent;
       border-bottom: 100px solid #fff;
@@ -697,10 +692,28 @@ ul {
   animation-delay: 1s; }
 
 .animate-third {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+  -o-animation-delay: 1.25s;
+  animation-delay: 1.25s; }
+
+.animate-fourth {
   -webkit-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
   -o-animation-delay: 1.5s;
   animation-delay: 1.5s; }
+
+.animate-fifth {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+  -o-animation-delay: 1.75s;
+  animation-delay: 1.75s; }
+
+.animate-sixth {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s; }
 
 @-webkit-keyframes reveal {
   0% {
