@@ -614,28 +614,15 @@ ul {
     display: none !important; }
 
   #projects {
-    height: -webkit-fill-available; }
+    height: auto;
+    padding-bottom: 15em; }
     #projects .projects-box {
-      justify-content: center;
-      align-items: center;
       padding-left: 2em;
       padding-right: 2em; }
     #projects .boxes {
-      width: 100% !important; }
-    #projects .projects-container {
-      display: none; }
-    #projects .inner-btn {
-      align-items: baseline;
-      display: block;
-      height: 30px;
-      border-radius: 45px;
-      border: 2px solid #e31936;
-      text-decoration: none;
-      color: #fff;
-      padding-top: 10px; }
-    #projects .inner-btn:hover {
-      background-color: #fff;
-      color: #262626; }
+      width: 25% !important; }
+    #projects .projects-container a {
+      width: 23%; }
 
   #career-page {
     padding: 0;
@@ -679,7 +666,8 @@ ul {
         height: 75px; }
 
   .job-title {
-    color: #000; } }
+    color: #000;
+    font-size: 40px; } }
 @media only screen and (min-width: 1055px) and (max-width: 1250px) {
   #career-page .job-box p {
     font-size: 18px; } }

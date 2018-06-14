@@ -636,33 +636,19 @@
     }
 
     #projects{
-      height: -webkit-fill-available;
+      height: auto;
+      padding-bottom: 15em;
       .projects-box{
-        justify-content: center;
-        align-items: center;
         padding-left: 2em;
         padding-right: 2em;
       }
       .boxes{
-        width: 100% !important;
+        width: 25% !important;
       }
       .projects-container{
-        display: none;
-      }
-      .inner-btn{
-        align-items: baseline;
-        display: block;
-        height: 30px;
-        border-radius: 45px;
-        border: 2px solid $marist-red;
-        text-decoration: none;
-        color: $white;
-        padding-top: 10px;
-        // box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-      }
-      .inner-btn:hover{
-        background-color: $white;
-        color: $dark-grey;
+        a{
+          width: 23%;  
+        }
       }
     }
     #career-page{
@@ -717,6 +703,7 @@
     }
     .job-title{
       color: $font-black;
+      font-size: 40px;
     }
 }
 
