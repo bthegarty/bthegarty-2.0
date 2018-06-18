@@ -406,8 +406,9 @@ ul {
     #projects .projects-container .shudder:hover {
       -webkit-animation: shake .1s infinite ease-in-out;
       animation: shake .1s infinite ease-in-out; }
-  #projects .white-space {
-    width: 50px; }
+
+.white-space {
+  width: 50px; }
 
 .screen {
   height: 33%;
@@ -489,6 +490,9 @@ ul {
       width: 50px;
       height: 50px;
       animation-delay: 1.3s; }
+
+#projects-m {
+  display: none; }
 
 @keyframes square {
   0% {
@@ -614,15 +618,27 @@ ul {
     display: none !important; }
 
   #projects {
-    height: auto;
-    padding-bottom: 15em; }
-    #projects .projects-box {
-      padding-left: 2em;
-      padding-right: 2em; }
-    #projects .boxes {
-      width: 25% !important; }
-    #projects .projects-container a {
-      width: 23%; }
+    display: none; }
+
+  #projects-m {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 18em;
+    padding-top: 6em; }
+    #projects-m .white-space {
+      height: 55px; }
+    #projects-m a {
+      text-decoration: none;
+      border-radius: 65px;
+      font-size: 30px;
+      border: 6px solid #e31936;
+      color: #e31936;
+      background-color: #262626;
+      padding: 25 200px; }
+    #projects-m .mp-container {
+      display: grid;
+      justify-content: center; }
 
   #career-page {
     padding: 0;

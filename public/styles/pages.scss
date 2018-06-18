@@ -347,11 +347,11 @@
       animation: shake .1s infinite ease-in-out;
     }
   }
-  .white-space{
-    width: 50px;
-  }
 }
 
+.white-space{
+  width: 50px;
+}
 
 .screen{
   height: 33%;
@@ -473,7 +473,7 @@
 	}
 }
 
-#mobile-project{
+#projects-m{
   display: none;
 }
 
@@ -642,24 +642,30 @@
 
     #projects{
       display: none;
-      // height: auto;
-      // padding-bottom: 15em;
-      // .projects-box{
-      //   padding-left: 2em;
-      //   padding-right: 2em;
-      // }
-      // .boxes{
-      //   width: 25% !important;
-      // }
-      // .projects-container{
-      //   a{
-      //     width: 23%;
-      //   }
-      // }
     }
 
-    #mobile-project{
+    #projects-m{
       display: block;
+      text-align: center;
+      background-color: $white;
+      padding-bottom: 18em;
+      padding-top: 6em;
+      .white-space{
+        height: 55px;
+      }
+      a{
+        text-decoration: none;
+        border-radius: 65px;
+        font-size: 30px;
+        border: 6px solid $marist-red;
+        color: $marist-red;
+        background-color: $dark-grey;
+        padding: 25 200px;
+      }
+      .mp-container{
+        display: grid;
+        justify-content: center;
+      }
     }
 
     #career-page{

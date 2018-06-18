@@ -52,15 +52,15 @@ html(lang='en')
             i(class='fas fa-code')
             a(href='#career-tag') Career  
         li(class='mobile-item')
-          a(href='#projects')
+          a(href='#projects-m')
             i(class='fas fa-code-branch')
-            a(href='#projects') Projects  
+            a(href='#projects-m') Projects  
     //- end mobile nav
     
     //- body content
     div(id='welcome' class='container tag-line')
       div(class='content-container')
-        h1(class='intro animate-reveal animate-first') Hey there. I'm Brendan 
+        h1(class='intro animate-reveal animate-first') Hey there! I'm Brendan 
           p(class='animate-reveal animate-second') Web developer who focuses on clean design
         //- add social links here. We can animate them up inline block for web and block for mobile web 
       //- consider putting this with bubbles for z-indexing but dont animate 
@@ -231,12 +231,12 @@ html(lang='en')
         a(target='_blank' href='https://github.com/bthegarty') GitHub
     
     //- I think rewrite these with a display none for mobile view. It's to complex as is  
-    div(class='mobile-project')
-      //- make a list of 5 buttons for mobile
-      div(class='projects-container')
-      a(target='_blank' href='https://bthegarty.github.io/') Compiler
-      div(class='white-space')
-        a(target='_blank' href='https://github.com/bthegarty/OFS-bthegarty.com-1.0') Versions
+    div(id='projects-m')
+      div(class='mp-container')
+        a(target='_blank' href='https://bthegarty.github.io/') Compiler
+        div(class='white-space')
+        a(target='_blank' href='https://github.com/bthegarty/OFS-bthegarty.com-1.0') bthegarty 1.0
+        div(class='white-space')
         a(target='_blank' href='https://www.shudder.com/') Shudder
         div(class='white-space')
         a(target='_blank' href='https://www.sundancenow.com/') Sundance Now
