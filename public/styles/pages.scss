@@ -473,6 +473,11 @@
 	}
 }
 
+#mobile-project{
+  display: none;
+}
+
+
 //for spinning the compainion cube
 //  @-webkit-keyframes square {
 //   0%   { transform: translateY(0); }
@@ -636,21 +641,27 @@
     }
 
     #projects{
-      height: auto;
-      padding-bottom: 15em;
-      .projects-box{
-        padding-left: 2em;
-        padding-right: 2em;
-      }
-      .boxes{
-        width: 25% !important;
-      }
-      .projects-container{
-        a{
-          width: 23%;  
-        }
-      }
+      display: none;
+      // height: auto;
+      // padding-bottom: 15em;
+      // .projects-box{
+      //   padding-left: 2em;
+      //   padding-right: 2em;
+      // }
+      // .boxes{
+      //   width: 25% !important;
+      // }
+      // .projects-container{
+      //   a{
+      //     width: 23%;
+      //   }
+      // }
     }
+
+    #mobile-project{
+      display: block;
+    }
+
     #career-page{
       padding: 0;
       padding-bottom: 2em;

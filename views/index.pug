@@ -63,6 +63,7 @@ html(lang='en')
         h1(class='intro animate-reveal animate-first') Hey there. I'm Brendan 
           p(class='animate-reveal animate-second') Web developer who focuses on clean design
         //- add social links here. We can animate them up inline block for web and block for mobile web 
+      //- consider putting this with bubbles for z-indexing but dont animate 
       div(class='social-home')  
         a(class='link animate-reveal animate-third' target='_blank' href='https://www.linkedin.com/in/brendan-hegarty-a91186104/')
           i(class='fab fa-linkedin-in fa-2x')
@@ -228,8 +229,19 @@ html(lang='en')
         a(target='_blank' href='https://www.sundancenow.com/') Sundance Now
         div(class='white-space')
         a(target='_blank' href='https://github.com/bthegarty') GitHub
+    
     //- I think rewrite these with a display none for mobile view. It's to complex as is  
-      
+    div(class='mobile-project')
+      //- make a list of 5 buttons for mobile
+      div(class='projects-container')
+      a(target='_blank' href='https://bthegarty.github.io/') Compiler
+      div(class='white-space')
+        a(target='_blank' href='https://github.com/bthegarty/OFS-bthegarty.com-1.0') Versions
+        a(target='_blank' href='https://www.shudder.com/') Shudder
+        div(class='white-space')
+        a(target='_blank' href='https://www.sundancenow.com/') Sundance Now
+        div(class='white-space')
+        a(target='_blank' href='https://github.com/bthegarty') GitHub
     //- div(class='bottom-tag')
       div(class='goodbye') See a balk is when you make a... okay it's actually any motion that goes towrads. I need to just start over
 
