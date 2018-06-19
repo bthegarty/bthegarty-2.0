@@ -621,16 +621,19 @@ ul {
   #projects-m {
     display: block;
     text-align: center;
-    background-color: #fff;
+    border-top: 2px solid #fff;
     padding-bottom: 18em;
-    padding-top: 6em; }
+    padding-top: 6em;
+    background: linear-gradient(135deg, #e31936 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px), linear-gradient(225deg, #e31936 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
+    background-size: 64px 128px;
+    background-color: #e31936; }
     #projects-m .white-space {
       height: 55px; }
     #projects-m a {
       text-decoration: none;
       border-radius: 65px;
-      font-size: 30px;
-      border: 6px solid #e31936;
+      font-size: 36px;
+      border: 6px solid #fff;
       color: #e31936;
       background-color: #262626;
       padding: 25 200px;

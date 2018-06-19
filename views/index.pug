@@ -11,7 +11,6 @@ html(lang='en')
     script(src='./script.js') 
     //-for the scroll state
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")  
-    //- LETS MAKE THIS SINGLE SCROLL
     
   body
     //- nav bar
@@ -62,8 +61,6 @@ html(lang='en')
       div(class='content-container')
         h1(class='intro animate-reveal animate-first') Hey there! I'm Brendan 
           p(class='animate-reveal animate-second') Web developer who focuses on clean design
-        //- add social links here. We can animate them up inline block for web and block for mobile web 
-      //- consider putting this with bubbles for z-indexing but dont animate 
 
       div(class='scroll')
         div(class='social-home')  
@@ -77,7 +74,6 @@ html(lang='en')
             i(class='fab fa-github fa-2x')
         a(class='scroll-icon' href='#about') Scroll
             span
-      //- this should animate the squares. Inspect in console over these
       
       //- it doesnt use JS. just look for bg-bubbles in pages.scss    
       ul(class='bg-bubbles')
