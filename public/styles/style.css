@@ -633,7 +633,8 @@ ul {
       border: 6px solid #e31936;
       color: #e31936;
       background-color: #262626;
-      padding: 25 200px; }
+      padding: 25 200px;
+      box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5); }
     #projects-m .mp-container {
       display: grid;
       justify-content: center; }
