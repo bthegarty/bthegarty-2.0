@@ -15,7 +15,7 @@ router.get('/',function(req, res){
 });
 
 app.use('/not-found',function(req, res){
-  console.log("Error 404: Well golly, I'm not really sure how you got here");
+  res.render('not-found');
 });
 
 app.listen(port,function(){
