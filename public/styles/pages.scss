@@ -633,6 +633,7 @@
       border-top: 2px solid $white;
       padding-bottom: 18em;
       padding-top: 6em;
+      // brick pattern
       background:
       linear-gradient(135deg, $marist-red 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
       linear-gradient(225deg, $marist-red 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
@@ -645,11 +646,13 @@
         text-decoration: none;
         border-radius: 65px;
         font-size: 36px;
+        letter-spacing: 2px;
         border: 6px solid $white;
-        color: $marist-red;
+        color: $white;
         background-color: $dark-grey;
-        padding: 25 200px;
+        padding: 25 175px;
         box-shadow: 0 2px 4px 2px rgba(0,0,0,.5);
+        -webkit-font-smoothing: antialiased;
       }
       .mp-container{
         display: grid;

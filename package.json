@@ -1,6 +1,6 @@
 {
   "name": "bthegarty-2.0",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Revamp and update my website",
   "main": "app.js",
   "scripts": {
