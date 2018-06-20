@@ -514,13 +514,14 @@ ul {
     transform: translate(0px, 1px) rotate(0deg); }
   100% {
     transform: translate(0px, -1px) rotate(-1deg); } }
-@media only screen and (min-width: 320px) and (max-width: 1020px) {
+@media only screen and (max-width: 1020px) {
   #welcome {
     height: -webkit-fill-available; }
     #welcome .intro {
       margin-left: 0;
       text-align: center;
-      font-size: 94px; }
+      font-size: 94px;
+      margin-top: 2em; }
     #welcome p {
       margin-left: 0;
       font-size: 64px; }
@@ -531,12 +532,10 @@ ul {
       #welcome .scroll .scroll-icon {
         display: none; }
       #welcome .scroll .social-home {
-        text-align: center;
-        z-index: 1;
         display: grid; }
         #welcome .scroll .social-home a {
           padding: 1.5em;
-          font-size: 34px; }
+          font-size: 44px; }
         #welcome .scroll .social-home .link {
           padding-right: 10em; }
         #welcome .scroll .social-home .face {
@@ -631,9 +630,9 @@ ul {
     #projects-m a {
       text-decoration: none;
       border-radius: 65px;
-      font-size: 36px;
+      font-size: 24px;
       letter-spacing: 2px;
-      border: 6px solid #fff;
+      border: 4px solid #fff;
       color: #fff;
       background-color: #262626;
       padding: 25 175px;
@@ -648,7 +647,7 @@ ul {
       opacity: .9; }
       #projects-m .projects-banner p {
         color: #fff;
-        font-size: 36px;
+        font-size: 26px;
         padding: 1em; }
 
   #career-page {
