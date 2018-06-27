@@ -647,7 +647,7 @@ ul {
       opacity: .9; }
       #projects-m .projects-banner p {
         color: #fff;
-        font-size: 26px;
+        font-size: 30px;
         padding: 1em; }
 
   #career-page {
@@ -694,7 +694,7 @@ ul {
   .job-title {
     color: #000;
     font-size: 40px; } }
-@media only screen and (min-width: 1055px) and (max-width: 1250px) {
+@media only screen and (min-width: 1020px) and (max-width: 1250px) {
   #career-page .job-box p {
     font-size: 18px; } }
 .animate-reveal {

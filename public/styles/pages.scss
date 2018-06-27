@@ -662,7 +662,7 @@
         opacity: .9;
         p{
           color: $white;
-          font-size: 26px;
+          font-size: 30px;
           padding: 1em;
         }
       }
@@ -724,7 +724,7 @@
     }
 }
 
-@media only screen and (min-width: 1055px) and (max-width: 1250px) {
+@media only screen and (min-width: 1020px) and (max-width: 1250px) {
   #career-page{
     .job-box{
       p{

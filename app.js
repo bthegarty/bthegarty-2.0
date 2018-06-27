@@ -1,10 +1,9 @@
 var express = require('express');
 var pug = require('pug');
 var app = express();
-// var $ = require('jQuery');
 var router = express.Router();
 var path = require('path');
-// heroku requires this be a declared variable 
+// heroku requires this be a declared variable
 var port = process.env.PORT || 8080
 
 app.use('/',router);

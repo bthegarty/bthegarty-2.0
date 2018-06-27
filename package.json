@@ -1,6 +1,6 @@
 {
   "name": "bthegarty-2.0",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Revamp and update my website",
   "main": "app.js",
   "scripts": {
@@ -22,7 +22,6 @@
     "jquery": "^3.3.1",
     "nodemon": "^1.17.3",
     "npm": "^6.1.0",
-    "particles.js": "^2.0.0",
     "pug": "^2.0.3",
     "sass": "^1.1.1",
     "yarn": "^1.5.1"
