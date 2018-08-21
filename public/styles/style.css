@@ -150,11 +150,10 @@ ul {
 
 .intro {
   color: #262626;
-  margin-left: 3em;
   margin-top: 2em;
+  text-align: center;
   transform: translateY(85px); }
   .intro p {
-    margin-left: 1em;
     font-size: 64px; }
 
 .social-home {
@@ -720,6 +719,26 @@ ul {
     -moz-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); } }
+.not-found {
+  height: 100%;
+  background-image: url("./logos/doodles.png");
+  text-align: center; }
+  .not-found .not-found-text {
+    font-weight: 600;
+    display: flex;
+    justify-content: center; }
+    .not-found .not-found-text a {
+      padding-left: 5px;
+      color: #262626;
+      text-decoration: none; }
+    .not-found .not-found-text a:hover {
+      color: #ff6666; }
+  .not-found img {
+    padding-bottom: 1em; }
+  .not-found .other-projects {
+    padding-top: 5px;
+    font-weight: 600; }
+
 body, html {
   background-color: #262626;
   font-family: "Roboto Condensed", sans-serif;
@@ -770,5 +789,9 @@ h4 {
 
 #career-tag {
   font-family: "Lobster", cursive; }
+
+.alert {
+  font-family: "Lobster", cursive;
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

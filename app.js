@@ -18,6 +18,10 @@ app.use('/not-found',function(req, res){
   res.render('not-found');
 });
 
+app.use('/work',function(req, res){
+  res.render('work');
+});
+
 app.listen(port,function(){
   console.log('Server running at Port 8080');
 });

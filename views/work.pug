@@ -14,6 +14,8 @@ html(lang='en')
     //-for the scroll state
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")  
     
+    link(rel='stylesheet', href='./styles/work-tabs.css')
+    
   body
     //- nav bar
     div(class='navbar' id='menu-center')
@@ -120,31 +122,44 @@ html(lang='en')
       div(class='ab-2-con')
     div(id='career-tag') Currently working for AMC Networks as a QA Engineer
     div(id='career-page')
+      //- See if I can make this a Tabs where you select the image
       //-turn this into Shudder 
       div(class='job-box') 
         div(class='job-mlb')
           div(class='job-circle')
-            img(src='./styles/logos/mlb.gif' alt='MLB')
-          div(class='job-title') IT Analyst
-          div(class='great-divide')
-          p A member of the IT team, I collected data from and maintained constant contact with the 30 MLB affiliated clubs in an effort to constantly find ways to increase productivity and push clubs more towards technolgy integration.
+            img(src='./styles/logos/mlb.gif' alt='MLB' onclick="openJob('mlb')")
+          div(id='mlb' class='job' style="display:none")    
+            div(class='job-title') IT Analyst
+            div(class='great-divide')
+              p A member of the IT team, I collected data from and maintained constant contact with the 30 MLB affiliated clubs in an effort to constantly find ways to increase productivity and push clubs more towards technolgy integration.
       div(class='job-box')
         div(class='job-amc')
           div(class='job-circle')
-            img(src='./styles/logos/AMC_Networks_logo.png' alt='AMC')
-          div(class='job-title') QA Engineer
-          div(class='great-divide')
-          p A QA Engineer for Shudder and Sundance Now, two of AMC networks streaming subscription services. I handle Web bugs and hotfixes as well as feature/bug releases for all platforms(Android, iOS, Web, Roku, & Apple TV). I also write HTML Email campaigns for both serivces.
+            img(src='./styles/logos/AMC_Networks_logo.png' alt='AMC' onclick="openJob('amc')")
+          div(id='amc' class='job')    
+            div(class='job-title') QA Engineer
+            div(class='great-divide')
+            p A QA Engineer for Shudder and Sundance Now, two of AMC networks streaming subscription services. I handle Web bugs and hotfixes as well as feature/bug releases for all platforms(Android, iOS, Web, Roku, & Apple TV). I also write HTML Email campaigns for both serivces.
       //- turn this one into sundance Now
       //- Need a S/N asset that fits the circle a little better
       div(class='job-box')
         div(class='job-bam')
           div(class='job-circle')
-            img(src='./styles/logos/mlb.gif' alt='BAM')
-          div(class='job-title') QA Analyst
-          div(class='great-divide') 
-          p A part of the QA team working with the MLB internal player & store databases, I wrote SQL queries and created extensive data maps. I was a part of the MLB draft tech team from 2015-2016.
+            img(src='./styles/logos/mlb.gif' alt='BAM' onclick="openJob('bam')")
+          div(id='bam' class='job' style="display:none")    
+            div(class='job-title') QA Analyst
+            div(class='great-divide') 
+            p A part of the QA team working with the MLB internal player & store databases, I wrote SQL queries and created extensive data maps. I was a part of the MLB draft tech team from 2015-2016.
       //- div(class='bottom-space')
+      script.
+        function openJob(jobName) {
+          var i;
+          var x = document.getElementsByClassName("job");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(jobName).style.display = "block";  
+        }
         
     div(id='projects')
       //- Row 1 Boxes
