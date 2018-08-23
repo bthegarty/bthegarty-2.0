@@ -236,7 +236,8 @@ ul {
 
 #about {
   height: 69px;
-  background-color: #e31936; }
+  background-color: #e31936;
+  background-image: url("./logos/robots.png"); }
 
 .about-img {
   padding-top: 1em;
