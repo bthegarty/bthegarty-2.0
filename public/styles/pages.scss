@@ -4,12 +4,12 @@
 
 #welcome{
   height: 725px;
-  background-color: $marist-red;
+  background-color: $grey;
   background-image: url("./logos/robots.png");
 }
 
 .intro{
-  color: $dark-grey;
+  color: $bronze;
   margin-top: 2em;
   text-align: center;
   transform: translateY(85px);
@@ -31,7 +31,7 @@
   margin-top: 13em;
   text-align: center;
   a{
-    color: $dark-grey;
+    color: $bronze;
     text-decoration: none;
     letter-spacing: 4px;
   }
@@ -42,7 +42,7 @@
 }
 
 .scroll a:hover{
-  color: $marist-grey;
+  color: $light-grey;
 }
 
 .scroll a span{
@@ -124,7 +124,8 @@
 //buffer
 #about{
   height: 69px;
-  background-color: $marist-red;
+  background-color: $grey;
+  background-image: url("./logos/robots.png");
 }
 
 .about-img{
@@ -229,6 +230,7 @@
     color: $white;
     font-size: 24px;
     line-height: 1.2;
+    padding: 0 35px;
   }
 }
 

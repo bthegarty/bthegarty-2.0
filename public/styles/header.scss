@@ -36,15 +36,15 @@ ul{
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  color: $font-black;
+  color: $light-grey;
 }
 
 .navbar a:hover{
-  color: $marist-grey;
+  color: $bronze;
 }
 
 .active, .btn:hover{
-  color: $marist-grey !important;
+  color: $bronze !important;
 }
 
 .end-nav{
@@ -57,7 +57,7 @@ ul{
 }
 
 .scrolled a{
-  color: $white;
+  color: $light-grey;
 }
 
 .scrolled-drop{

@@ -26,13 +26,13 @@ ul {
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  color: #000; }
+  color: #eaeaea; }
 
 .navbar a:hover {
-  color: #ffcccc; }
+  color: #ad974f; }
 
 .active, .btn:hover {
-  color: #ffcccc !important; }
+  color: #ad974f !important; }
 
 .end-nav {
   padding-right: 1em; }
@@ -42,7 +42,7 @@ ul {
   transition: 0.5s; }
 
 .scrolled a {
-  color: #fff; }
+  color: #eaeaea; }
 
 .scrolled-drop {
   background-color: #262626;
@@ -145,11 +145,11 @@ ul {
     display: none; } }
 #welcome {
   height: 725px;
-  background-color: #e31936;
+  background-color: #403f45;
   background-image: url("./logos/robots.png"); }
 
 .intro {
-  color: #262626;
+  color: #ad974f;
   margin-top: 2em;
   text-align: center;
   transform: translateY(85px); }
@@ -166,7 +166,7 @@ ul {
   margin-top: 13em;
   text-align: center; }
   .scroll a {
-    color: #262626;
+    color: #ad974f;
     text-decoration: none;
     letter-spacing: 4px; }
   .scroll span {
@@ -174,7 +174,7 @@ ul {
     padding: 10px; }
 
 .scroll a:hover {
-  color: #ffcccc; }
+  color: #eaeaea; }
 
 .scroll a span {
   position: absolute;
@@ -236,7 +236,8 @@ ul {
 
 #about {
   height: 69px;
-  background-color: #e31936; }
+  background-color: #403f45;
+  background-image: url("./logos/robots.png"); }
 
 .about-img {
   padding-top: 1em;
@@ -319,7 +320,8 @@ ul {
   .job-box p {
     color: #fff;
     font-size: 24px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    padding: 0 35px; }
 
 .job-circle {
   background-color: #ff6666;
