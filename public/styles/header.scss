@@ -52,7 +52,7 @@ ul{
 }
 
 .scrolled{
-  background-color: $dark-grey;
+  background-color: $navy;
   transition: 0.5s;
 }
 
@@ -60,56 +60,8 @@ ul{
   color: $light-grey;
 }
 
-.scrolled-drop{
-  background-color: $dark-grey;
-  transition: 0.5s;
-  color: $white;
-}
-
 .before-drop{
   padding-right: 115px;
-}
-
-// dropdown
-.dropbtn{
-  padding: 16px;
-  border: none;
-  font-size: 16px;
-  font-family: $font;
-}
-
-.dropdown{
-  position: fixed;
-  right: 0;
-  padding-top: 10px;
-}
-
-.dropdown-content{
-  display: none;
-  position: absolute;
-  width: 112px;
-  background-color: $dark-grey;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-
-  a{
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: $white;
-  }
-}
-
-.dropdown-content a:hover{
-  color: $red-light;
-}
-
-.dropdown:hover .dropdown-content{
-  display: block;
-}
-
-.dropdown:hover .dropbtn{
-  color: $red-light;
 }
 
 // mobile nav support
@@ -121,7 +73,7 @@ ul{
     list-style: none;
     margin: 0;
     overflow: hidden;
-    background-color: $dark-grey;
+    background-color: $navy;
 
     display: none;
     align-items: baseline;
@@ -131,11 +83,11 @@ ul{
     text-decoration: none;
     display: block;
     font-size: 34px;
-    color: $white;
+    color: $light-grey;
   }
   li{
     text-align: center;
-    color: $white;
+    color: $light-grey;
     padding: 3em;
   }
   svg{

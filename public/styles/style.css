@@ -38,52 +38,14 @@ ul {
   padding-right: 1em; }
 
 .scrolled {
-  background-color: #262626;
+  background-color: #1c2237;
   transition: 0.5s; }
 
 .scrolled a {
   color: #eaeaea; }
 
-.scrolled-drop {
-  background-color: #262626;
-  transition: 0.5s;
-  color: #fff; }
-
 .before-drop {
   padding-right: 115px; }
-
-.dropbtn {
-  padding: 16px;
-  border: none;
-  font-size: 16px;
-  font-family: "Roboto Condensed", sans-serif; }
-
-.dropdown {
-  position: fixed;
-  right: 0;
-  padding-top: 10px; }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 112px;
-  background-color: #262626;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-  .dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: #fff; }
-
-.dropdown-content a:hover {
-  color: #ff6666; }
-
-.dropdown:hover .dropdown-content {
-  display: block; }
-
-.dropdown:hover .dropbtn {
-  color: #ff6666; }
 
 .mobile-nav ul {
   position: fixed;
@@ -92,7 +54,7 @@ ul {
   list-style: none;
   margin: 0;
   overflow: hidden;
-  background-color: #262626;
+  background-color: #1c2237;
   display: none;
   align-items: baseline;
   justify-content: center; }
@@ -100,10 +62,10 @@ ul {
   text-decoration: none;
   display: block;
   font-size: 34px;
-  color: #fff; }
+  color: #eaeaea; }
 .mobile-nav li {
   text-align: center;
-  color: #fff;
+  color: #eaeaea;
   padding: 3em; }
 .mobile-nav svg {
   font-size: 44px;
@@ -120,8 +82,8 @@ ul {
   .navbar a {
     display: none; } }
 .footer {
-  background-color: #262626;
-  color: #fff;
+  background-color: #1c2237;
+  color: #eaeaea;
   padding: 1em !important;
   display: -webkit-box;
   display: -moz-box;
@@ -132,12 +94,12 @@ ul {
   .footer .flexable {
     margin-right: auto; }
   .footer a {
-    color: #fff;
+    color: #eaeaea;
     padding-left: 0.3em;
     padding-right: 0.3em; }
 
 .footer a:hover {
-  color: #ffcccc;
+  color: #ad974f;
   transition: color 0.3s linear; }
 
 @media only screen and (min-width: 320px) and (max-width: 1020px) {
@@ -145,7 +107,7 @@ ul {
     display: none; } }
 #welcome {
   height: 725px;
-  background-color: #403f45;
+  background-color: #2d3759;
   background-image: url("./logos/robots.png"); }
 
 .intro {
@@ -209,34 +171,34 @@ ul {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0; } }
 #about-page {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #eaeaea;
   height: 656px;
   display: flex;
-  color: #fff;
+  color: #eaeaea;
   text-align: center;
   line-height: 1.2; }
   #about-page .section-1 {
-    background-color: #ff6666;
+    background-color: #3e4c7b;
     background-image: url("./logos/clean-gray-paper.png");
     height: 100%;
     width: 33.33%; }
   #about-page .section-2 {
-    background-color: #ffcccc;
+    background-color: #eaeaea;
     background-image: url("./logos/embossed-paper.png");
     height: 100%;
     width: 33.33%;
-    color: #000; }
+    color: #1c2237; }
     #about-page .section-2 .about-divide {
-      border-bottom: 1px solid #000; }
+      border-bottom: 1px solid #1c2237; }
   #about-page .section-3 {
-    background-color: #ff6666;
+    background-color: #3e4c7b;
     background-image: url("./logos/clean-gray-paper.png");
     height: 100%;
     width: 33.33%; }
 
 #about {
   height: 69px;
-  background-color: #403f45;
+  background-color: #2d3759;
   background-image: url("./logos/robots.png"); }
 
 .about-img {
@@ -247,7 +209,7 @@ ul {
 .about-divide {
   margin: 30px auto 30px auto;
   width: 75px;
-  border-bottom: 1px solid #fff; }
+  border-bottom: 1px solid #eaeaea; }
 
 .college {
   padding-left: 1em;
@@ -256,10 +218,10 @@ ul {
 
 #abroad {
   height: 656px;
-  background-color: #fff;
+  background-color: #eaeaea;
   text-align: center;
   display: flex;
-  border-top: 1px solid #fff; }
+  border-top: 1px solid #eaeaea; }
 
 .triangle {
   display: none; }
@@ -267,7 +229,7 @@ ul {
 .ab-container {
   height: 100%;
   width: 50%;
-  background-color: #ff3333; }
+  background-color: #2d3759; }
   .ab-container .ab-img {
     padding-top: 15em;
     height: 275px;
@@ -276,7 +238,6 @@ ul {
 .ab-2-con {
   height: auto;
   width: 50%;
-  background-color: #fff;
   padding-top: 4em; }
   .ab-2-con h4 {
     padding-left: 1em;
@@ -286,25 +247,26 @@ ul {
     line-height: 1.2;
     text-align: left; }
     .ab-2-con p a {
-      color: #000;
+      color: #1c2237;
       text-decoration: none; }
 
 .learn:hover {
-  color: #ffcccc; }
+  color: #8e793e; }
 
 #career-page {
+  border-top: 1px solid #1c2237;
   height: 525px;
-  background-color: #ff6666;
+  background-color: #3e4c7b;
   margin: 0 auto;
   padding: 0px 150px; }
 
 #career {
   height: 69px;
-  background-color: #fff; }
+  background-color: #eaeaea; }
 
 #career-tag {
-  border-top: 1px solid #fff;
-  background-color: #ffcccc;
+  border-top: 1px solid #eaeaea;
+  background-color: #50619c;
   text-align: center;
   height: 50px;
   padding: 50px 0px;
@@ -318,13 +280,13 @@ ul {
   color: #555;
   margin-top: -45px; }
   .job-box p {
-    color: #fff;
+    color: #eaeaea;
     font-size: 24px;
     line-height: 1.2;
     padding: 0 35px; }
 
 .job-circle {
-  background-color: #ff6666;
+  background-color: #3e4c7b;
   width: 112px;
   height: 96px;
   padding-top: 25px;
@@ -335,7 +297,7 @@ ul {
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #fff; }
+  color: #eaeaea; }
 
 .job-amc {
   line-height: 20px; }
@@ -349,7 +311,7 @@ ul {
 .great-divide {
   margin: 30px auto 30px auto;
   width: 75px;
-  border-bottom: 1px solid #e31936; }
+  border-bottom: 1px solid #eaeaea; }
 
 #projects {
   padding-top: 80px;
@@ -367,15 +329,15 @@ ul {
       width: 15%;
       height: 150px;
       border-radius: 10px;
-      border: 3px solid #e31936;
+      border: 3px solid #ad974f;
       text-decoration: none;
-      background-color: #262626;
-      color: #fff; }
+      background-color: #1c2237;
+      color: #eaeaea; }
       #projects .projects-box .boxes .label {
         position: relative;
         top: -10px; }
         #projects .projects-box .boxes .label span {
-          background-color: #e31936;
+          background-color: #ad974f;
           border-radius: 30px;
           padding: 0 20px;
           align-items: center; }
@@ -395,15 +357,15 @@ ul {
       width: 15%;
       height: 30px;
       border-radius: 45px;
-      border: 2px solid #262626;
+      border: 2px solid #1c2237;
       text-decoration: none;
-      color: #262626;
+      color: #1c2237;
       padding-top: 10px;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
     #projects .projects-container a:hover {
-      color: #e31936;
-      background-color: #262626;
-      border: 2px solid #e31936;
+      color: #ad974f;
+      background-color: #1c2237;
+      border: 2px solid #ad974f;
       transition: 0.5s; }
     #projects .projects-container .shudder {
       margin: 0; }
@@ -420,12 +382,12 @@ ul {
   padding-right: 1em;
   padding-top: 6em; }
   .screen .screen-text {
-    background-color: #262626;
+    background-color: #1c2237;
     border-radius: 15px;
     text-align: left;
     font-size: 24px;
     padding: 1em;
-    color: #fff;
+    color: #eaeaea;
     -webkit-font-smoothing: antialiased; }
 
 #projects-m {
@@ -488,8 +450,8 @@ ul {
       width: 100%;
       height: auto;
       padding-bottom: 5em;
-      border-top: 2px solid white;
-      border-bottom: 2px solid white; }
+      border-top: 2px solid #eaeaea;
+      border-bottom: 2px solid #eaeaea; }
     #about-page .section-3 {
       width: 100%;
       height: auto;
@@ -527,7 +489,7 @@ ul {
     #abroad .triangle {
       border-left: 165px solid transparent;
       border-right: 165px solid transparent;
-      border-bottom: 100px solid #fff;
+      border-bottom: 100px solid #eaeaea;
       position: absolute;
       display: block;
       left: 0; }
@@ -551,7 +513,7 @@ ul {
   #projects-m {
     display: block;
     text-align: center;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #eaeaea;
     padding-bottom: 18em;
     background-image: url("./logos/sativa.png"); }
     #projects-m .white-space {
@@ -561,8 +523,8 @@ ul {
       border-radius: 65px;
       font-size: 24px;
       letter-spacing: 2px;
-      border: 4px solid #262626;
-      color: #262626;
+      border: 4px solid #1c2237;
+      color: #1c2237;
       padding: 25 175px;
       box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5);
       -webkit-font-smoothing: antialiased; }
@@ -570,11 +532,11 @@ ul {
       display: grid;
       justify-content: center; }
     #projects-m .projects-banner {
-      background-color: #262626;
+      background-color: #1c2237;
       width: 100%;
       opacity: .9; }
       #projects-m .projects-banner p {
-        color: #fff;
+        color: #eaeaea;
         font-size: 30px;
         padding: 1em; }
 
@@ -583,7 +545,7 @@ ul {
     padding-bottom: 2em;
     height: auto; }
     #career-page p {
-      color: #000 !important; }
+      color: #262626 !important; }
     #career-page .job-box {
       width: auto;
       float: none;
@@ -592,10 +554,10 @@ ul {
       display: flex;
       justify-content: center; }
     #career-page .job-circle {
-      background-color: #ffcccc; }
+      background-color: #eaeaea; }
     #career-page .job-mlb {
       width: 90%;
-      background-color: #ffcccc;
+      background-color: #eaeaea;
       border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
@@ -603,7 +565,7 @@ ul {
         height: 75px; }
     #career-page .job-amc {
       width: 90%;
-      background-color: #ffcccc;
+      background-color: #eaeaea;
       border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
@@ -612,7 +574,7 @@ ul {
         width: 140px; }
     #career-page .job-bam {
       width: 90%;
-      background-color: #ffcccc;
+      background-color: #eaeaea;
       border-radius: 16px;
       padding-bottom: 1em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
@@ -620,7 +582,7 @@ ul {
         height: 75px; }
 
   .job-title {
-    color: #000;
+    color: #262626;
     font-size: 40px; } }
 @media only screen and (min-width: 1020px) and (max-width: 1250px) {
   #career-page .job-box p {

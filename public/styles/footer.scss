@@ -1,8 +1,8 @@
 @import 'colors';
 
 .footer{
-  background-color: $dark-grey;
-  color: $white;
+  background-color: $navy;
+  color: $light-grey;
   padding: 1em !important;
 
   display: -webkit-box;
@@ -16,14 +16,14 @@
     margin-right: auto;
   }
   a{
-    color: $white;
+    color: $light-grey;
     padding-left: 0.3em;
     padding-right: 0.3em;
   }
 }
 
 .footer a:hover{
-  color: $marist-grey;
+  color: $bronze;
   transition: color 0.3s linear;
 }
 
