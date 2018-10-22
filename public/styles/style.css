@@ -82,18 +82,67 @@ ul {
   background-color: #1c2237;
   color: #eaeaea;
   padding: 1em !important;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   align-items: center; }
-  .footer .flexable {
-    margin-right: auto; }
   .footer a {
     color: #eaeaea;
     padding-left: 0.3em;
     padding-right: 0.3em; }
+  .footer .footer-top {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    text-align: center; }
+    .footer .footer-top .contact-section {
+      width: 100%; }
+      .footer .footer-top .contact-section p {
+        font-size: 20px; }
+      .footer .footer-top .contact-section a {
+        border: 2px solid #ad974f;
+        background-color: transparent;
+        text-decoration: none;
+        color: #ad974f;
+        border-radius: 35px;
+        padding: 10px 40px;
+        font-size: 18px; }
+      .footer .footer-top .contact-section a:focus {
+        outline: 0; }
+      .footer .footer-top .contact-section a:hover {
+        background-color: #eaeaea;
+        color: #1c2237;
+        transition: 0.5s;
+        cursor: pointer; }
+    .footer .footer-top .demo-section {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer .footer-top .demo-section p {
+        font-size: 16px;
+        margin: 0;
+        padding-right: 10px; }
+    .footer .footer-top .social-section {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer .footer-top .social-section p {
+        font-size: 16px;
+        margin: 0;
+        padding-right: 10px;
+        padding-top: 5px; }
+
+.flexable {
+  text-align: center;
+  display: block;
+  color: #fff; }
+
+.footer-divide {
+  margin: 5px auto 5px auto;
+  width: 575px;
+  border-bottom: 1px solid #eaeaea; }
 
 .footer a:hover {
   color: #ad974f;
@@ -242,7 +291,8 @@ ul {
   .ab-2-con p {
     padding-left: 2em;
     line-height: 1.2;
-    text-align: left; }
+    text-align: left;
+    max-width: 720px; }
     .ab-2-con p a {
       color: #1c2237;
       text-decoration: none; }
@@ -321,7 +371,10 @@ ul {
     justify-content: center;
     display: flex;
     align-items: center;
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    width: 100%;
+    max-width: 2080px;
+    margin: 0 auto; }
     #projects .projects-box .boxes {
       width: 15%;
       height: 150px;
@@ -349,7 +402,10 @@ ul {
     justify-content: center;
     display: flex;
     align-items: center;
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    width: 100%;
+    max-width: 2080px;
+    margin: 0 auto; }
     #projects .projects-container a {
       width: 15%;
       height: 30px;

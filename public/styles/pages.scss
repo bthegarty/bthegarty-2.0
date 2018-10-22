@@ -184,6 +184,7 @@
     padding-left: 2em;
     line-height: 1.2;
     text-align: left;
+    max-width: 720px;
     a{
       color: $navy;
       text-decoration: none;
@@ -286,6 +287,9 @@
     display: flex;
     align-items: center;
     padding-bottom: 2em;
+    width: 100%;
+    max-width: 2080px;
+    margin: 0 auto;
     .boxes{
       width: 15%;
       height: 150px;
@@ -322,6 +326,9 @@
     display: flex;
     align-items: center;
     padding-bottom: 2em;
+    width: 100%;
+    max-width: 2080px;
+    margin: 0 auto;
     a{
       width: 15%;
       height: 30px;
