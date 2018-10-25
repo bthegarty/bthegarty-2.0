@@ -88,9 +88,9 @@ section{
 .menu--toggle__burger:before,
 .menu--toggle__burger:after {
   position: absolute;
-  top: 1.75em;
+  top: 2.75em;
   right: 1.25em;
-  width: 2em;
+  width: 4em;
   height: 3px;
   background-color: $navy;
   border-radius: 2px;
@@ -124,8 +124,8 @@ section{
   display: grid;
   align-items: center;
   right: 0;
-  width: 6em;
-  height: 6em;
+  width: 8em;
+  height: 8em;
   margin: 0;
   padding: 0;
   background-color: $light-grey;

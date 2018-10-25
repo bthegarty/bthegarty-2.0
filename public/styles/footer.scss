@@ -28,8 +28,8 @@
         background-color: transparent;
         text-decoration: none;
         color: $bronze;
-        border-radius: 35px;
-        padding: 10px 40px;
+        border-radius: 50px;
+        padding: 10px 50px;
         font-size: 18px;
       }
       a:focus{
@@ -97,6 +97,14 @@
           font-size: 30px;
           padding: 1em;
         }
+    }
+    .contact-section{
+      p{
+        font-size: 35px;
+      }
+      a{
+        font-size: 35px;
+      }
     }
     .social-section{
       p{
