@@ -87,7 +87,25 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1020px) {
-    .footer{
-      display: none;
+  .footer-top{
+    display: block !important;
+    .demo-section{
+        p{
+          display: none;
+        }
+        a{
+          font-size: 30px;
+          padding: 1em;
+        }
     }
+    .social-section{
+      p{
+        display: none;
+      }
+      a{
+        padding: 2em;
+        font-size: 26px;
+      }
+    }
+  }
 }

@@ -68,3 +68,12 @@ $(function() {
 $('#about-buffer').click(function(event) {
   //target navbar for active
 });
+
+//
+$("menu__body-element").find("menu__body-link").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});

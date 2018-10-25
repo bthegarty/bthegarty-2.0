@@ -6,9 +6,12 @@
   height: 725px;
   background-color: $deep-blue;
   background-image: url("./logos/robots.png");
+  position: relative;
+  z-index: 1;
 }
 
 .intro{
+  z-index: -1;
   color: $bronze;
   margin-top: 2em;
   text-align: center;
@@ -154,10 +157,6 @@
   text-align: center;
   display: flex;
   border-top: 1px solid $light-grey;
-}
-
-.triangle{
-  display: none;
 }
 
 .ab-container{
@@ -422,16 +421,16 @@
             font-size: 44px;
           }
           .link{
-            padding-right: 10em;
+            padding-right: 8em;
           }
           .face{
-            padding-right: 5em;
+            padding-right: 3em;
           }
           .insta{
-
+            padding-left: 3em
           }
           .git{
-            padding-left: 5em;
+            padding-left: 8em;
           }
         }
       }
@@ -494,18 +493,19 @@
         align-items: center;
         justify-content: center;
       }
-      .triangle-align{
-        display: inline-flex;
-        align-items: flex-end;
-      }
-      .triangle{
-      	border-left: 165px solid transparent;
-      	border-right: 165px solid transparent;
-      	border-bottom: 100px solid $light-grey;
-        position: absolute;
-        display: block;
-        left: 0;
-      }
+      //this is just usefil for how to style a triangle
+      // .triangle-align{
+      //   display: inline-flex;
+      //   align-items: flex-end;
+      // }
+      // .triangle{
+      // 	border-left: 165px solid transparent;
+      // 	border-right: 165px solid transparent;
+      // 	border-bottom: 100px solid $light-grey;
+      //   position: absolute;
+      //   display: block;
+      //   left: 0;
+      // }
     }
 
     #career{
@@ -532,8 +532,7 @@
       display: block;
       text-align: center;
       border-top: 2px solid $light-grey;
-      padding-bottom: 18em;
-      // brick pattern
+      padding-bottom: 5em;
       background-image: url("./logos/sativa.png");
       .white-space{
         height: 55px;
@@ -553,15 +552,11 @@
         display: grid;
         justify-content: center;
       }
-      .projects-banner{
-        background-color: $navy;
-        width: 100%;
-        opacity: .9;
-        p{
-          color: $light-grey;
-          font-size: 30px;
-          padding: 1em;
-        }
+      p{
+        color: $light-grey;
+        font-size: 30px;
+        padding: 1em;
+        background-color: rgba(28, 34, 55, 0.8);
       }
     }
 
