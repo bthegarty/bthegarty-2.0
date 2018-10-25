@@ -128,7 +128,7 @@ section {
     top: 0;
     transform: rotate(90deg); }
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
-  animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+  animation: checkboxCheckedAnimation 2s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
 #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
   display: flex;
   justify-content: center; }
@@ -240,9 +240,9 @@ section {
       font-size: 30px;
       padding: 1em; }
     .footer-top .contact-section p {
-      font-size: 35px; }
+      font-size: 35px !important; }
     .footer-top .contact-section a {
-      font-size: 35px; }
+      font-size: 35px !important; }
     .footer-top .social-section p {
       display: none; }
     .footer-top .social-section a {
