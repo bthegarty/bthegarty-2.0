@@ -14,6 +14,10 @@ router.get('/',function(req, res){
   res.render('index');
 });
 
+router.get('/nes',function(req, res){
+  res.render('nes');
+});
+
 app.use('/not-found',function(req, res){
   res.render('not-found');
 });
