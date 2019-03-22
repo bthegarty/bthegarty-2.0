@@ -1,112 +1,53 @@
 html(lang='en')
   head
-    title Brendan Hegarty
-    meta(name='viewport' content='user-scalable=0')
-    //- meta(name='viewport' content='width=device-width, initial-scale=1')
-    //- this is more mobile friendly. My code, however, is not  
-    link(rel='shortcut icon' href='./styles/logos/me.png')
-    link(rel='stylesheet', href='./styles/style.css')
-    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed|Lobster' rel='stylesheet')
-    script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
-    //-jquery must be referenced before the script using it 
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    script(src='./script.js') 
-    //-for the scroll state
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")  
+    include ./includes/header.pug
     
   body
     
     //- Start top nav bar
-    div(class='navbar' id='menu-center')
-        li(class='flexin')
-          a(class='btn active' href='#welcome') Hegarty  
-            i(class='fas fa-space-shuttle' data-fa-transform="rotate-270") 
-        li
-          a(href='#about') About 
-            i(class='far fa-lemon') 
-        li
-          a(href='#abroad') Abroad  
-            i(class='fas fa-globe')
-        li
-          a(href='#career') Career  
-            i(class='fas fa-code')
-        li
-          a(class='end-nav' href='#projects') Projects  
-            i(class='fas fa-code-branch')
-    //-end top nav          
-          
-          
-    //- start mobile nav
-    section
-
-      article
-        div(class="menu")
-          input(id="menu--toggle"
-                 type="checkbox")
-          <!-- /#menu--toggle -->
-          label(class="menu--toggle__trigger"
-                 for="menu--toggle")
-          <!-- /.menu--toggle__trigger -->
-          label(class="menu--toggle__burger"
-                 for="menu--toggle")
-                 
-          ul(class="menu__body")
-            li(class="menu__body-element")
-              a(class="menu__body-link" href='#welcome') Home
-            
-            li(class="menu__body-element")
-              a(class="menu__body-link" href='#about-page') About
-
-            li(class="menu__body-element")
-              a(class="menu__body-link" href='#abroad') Abroad
-
-            li(class="menu__body-element")
-              a(class="menu__body-link" href='#career-page') Career
-              
-            li(class="menu__body-element")
-              a(class="menu__body-link" href='#projects-m') Projects
-
-    //- end mobile nav
-    
+    include ./includes/nav.pug
     
     //- body content
-    div(id='welcome' class='container')
+    div(
+      id='welcome' 
+      class='container'
+      )
       h1(class='intro animate-reveal animate-first') Brendan Hegarty
         p(class='animate-reveal animate-second') Web Developer
           
       //- animated icons     
-      div(class='scroll')
-        div(class='social-home')  
-          a(class='link animate-reveal animate-third' target='_blank' href='https://www.linkedin.com/in/brendan-hegarty-a91186104/')
-            i(class='fab fa-linkedin-in fa-2x')
-          a(class='face animate-reveal animate-fourth' target='_blank' href='https://www.facebook.com/brendan.hegarty.14')
-            i(class='fab fa-facebook-f fa-2x')
-          a(class='insta animate-reveal animate-fifth' target='_blank' href='https://www.instagram.com/b_hegs1/?hl=en')
-            i(class='fab fa-instagram fa-2x')
-          a(class='git animate-reveal animate-sixth' target='_blank' href='https://github.com/bthegarty')
-            i(class='fab fa-github fa-2x')
-        a(class='scroll-icon' href='#about') Scroll
-            span
-      //- end animated icons        
+      include ./includes/social-scroll-animation.pug
 
     //- Start about section
     //- gap for nav  
     div(id='about') 
     div(id='about-page')
       div(class='section-1')
-        img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
+        img(
+          class='about-img' 
+          src='./styles/logos/seal.png' 
+          alt='Marist'
+          )
         h3 Marist College 
         div(class='about-divide')
         div(class='college') Marist College Class of 2017. B.S. from The School of Computer Science and Mathematics with a major in Computer Science and minors in Information Technology and Information Systems.
       div(class='section-2')
-        img(class='about-img' src='./styles/logos/me.png' alt='Me')
+        img(
+          class='about-img' 
+          src='./styles/logos/me.png' 
+          alt='Me'
+          )
         h3 Me
         div(class='about-divide')
         div(class='college') I am an avid snowboarder and golfer. Former memeber of the Marist College Computer Society as well as several Marist College Intermural Sports.
           p <!--blank space y'all-->
         div(class='college') Music is a large part of my life and who I am. I started playing the violin at 7 and have used the same insturment for the last 13 years. I also play guitar and piano in my spare time.
       div(class='section-3')
-        img(class='about-img' src='./styles/logos/seal.png' alt='Marist')
+        img(
+          class='about-img' 
+          src='./styles/logos/seal.png' 
+          alt='Marist'
+          )
         h3 Code
         div(class='about-divide')
         div(class='college') JavaScript, PUG(Jade) templates, Express, TypeScript, Java, PHP, Python, HTML5, CSS, Sass, SQL.
@@ -117,7 +58,11 @@ html(lang='en')
     div(id='abroad')
       div(class='ab-container')
         div(class='img-align')
-          img(class='ab-img' src='./styles/logos/seal.png' alt='Marist')
+          img(
+            class='ab-img' 
+            src='./styles/logos/seal.png' 
+            alt='Marist'
+            )
 
       div(class='ab-2-con')
         h4 Marist in the Dominican Republic:
@@ -128,8 +73,16 @@ html(lang='en')
         p In my time there I helped teach basic concepts of coding and technology ranging from Scratch, to robotics, to raspberry pie development.
         h4 Learn More About the Programs Here:
         p
-          a(class='learn' href='http://www.marist.edu/compscimath/computer-science-service-learning.html' target='_blank') Marist in the DR. 
-          a(class='learn' href='http://www.palmsopenproject.com/' target='_blank') Palms Open Project.
+          a(
+            class='learn' 
+            href='http://www.marist.edu/compscimath/computer-science-service-learning.html' 
+            target='_blank'
+            ) Marist in the DR. 
+          a(
+            class='learn' 
+            href='http://www.palmsopenproject.com/' 
+            target='_blank'
+            ) Palms Open Project.
     //-end abroad section    
         
     //-wanna learn about my jobs? theyre not that interesting    
@@ -142,14 +95,20 @@ html(lang='en')
       div(class='job-box') 
         div(class='job-mlb')
           div(class='job-circle')
-            img(src='./styles/logos/mlb.gif' alt='MLB')
+            img(
+              src='./styles/logos/mlb.gif' 
+              alt='MLB'
+              )
           div(class='job-title') Data Analyst
           div(class='great-divide')
           p A member of the IT team, I collected data from and maintained constant contact with the 30 MLB affiliated clubs in an effort to constantly find ways to increase productivity and push clubs more towards technolgy integration.
       div(class='job-box')
         div(class='job-amc')
           div(class='job-circle')
-            img(src='./styles/logos/AMC_Networks_logo.png' alt='AMC Networks')
+            img(
+              src='./styles/logos/AMC_Networks_logo.png' 
+              alt='AMC Networks'
+              )
           div(class='job-title') QA Engineer
           div(class='great-divide')
           p A QA Engineer for Shudder and Sundance Now, two of AMC networks streaming subscription services. I handle Web bugs and hotfixes as well as feature/bug releases for all platforms(Android, iOS, Web, Roku, & Apple TV). I also write HTML Email campaigns for both serivces.
@@ -158,7 +117,10 @@ html(lang='en')
       div(class='job-box')
         div(class='job-bam')
           div(class='job-circle')
-            img(src='./styles/logos/mlb.gif' alt='MLBAM')
+            img(
+              src='./styles/logos/mlb.gif' 
+              alt='MLBAM'
+              )
           div(class='job-title') QA Analyst
           div(class='great-divide') 
           p A part of the QA team working with the MLB internal player & store databases, I wrote SQL queries and created extensive data maps. I was a part of the MLB draft tech team from 2015-2016.
@@ -193,29 +155,53 @@ html(lang='en')
       
       //- Row 1 buttons       
       div(class='projects-container')
-        a(target='_blank' href='https://bthegarty.github.io/') Compiler
+        a(
+          target='_blank' 
+          href='https://bthegarty.github.io/'
+          ) Compiler
         div(class='white-space')
-        a(target='_blank' href='https://github.com/bthegarty/OFS-bthegarty.com-1.0') Versions
+        a(
+          target='_blank' 
+          href='https://github.com/bthegarty/OFS-bthegarty.com-1.0'
+          ) Versions
         div(class='white-space')
-        a(target='_blank' href='https://the-manor.herokuapp.com/') The Manor
+        a(
+          target='_blank' 
+          href='https://the-manor.herokuapp.com/'
+          ) The Manor
       
       //- Row 2 Boxes
       div(class='projects-box')
         div(class='boxes') 
           div(class='label')
             span
-              img(src='./styles/logos/shudder.webp' alt='shudder')
+              img(
+                src='./styles/logos/shudder.webp' 
+                alt='shudder'
+                )
           p A horror/thriller streaming service where I am the main Web QA and fix UI bugs for the new Shudder. 
           p <!--blank spacing-->  
-            a(class='inner-btn' target='_blank' href='https://www.shudder.com') Shudder
+            a(
+              class='inner-btn' 
+              target='_blank' 
+              href='https://www.shudder.com'
+              ) Shudder
         div(class='white-space')
         div(class='boxes')
           div(class='label')
             span
-              img(class='sn' src='./styles/logos/sundance.png' alt='sundance')
+              img(
+                class='sn' 
+                src='./styles/logos/sundance.png' 
+                alt='sundance'
+                )
           p Documentaries and Film Festival hits. The sister service to Shudder where I am also the main Web Team QA.
           p <!--blank spacing-->  
-            a(class='inner-btn' target='_blank' href='https://www.sundancenow.com') Sundance Now
+            a(
+              class='inner-btn' 
+              target='_blank' 
+              href='https://www.sundancenow.com'
+              ) Sundance Now
         div(class='white-space')
         div(class='boxes')
           div(class='label')
@@ -223,16 +209,29 @@ html(lang='en')
               i(class='fab fa-github-alt')
           p This website is a node app written using PUG(Jade). Check out my git and the public repo for this project.
           p <!--blank spacing-->
-            a(class='inner-btn' target='_blank' href='https://bthegarty.github.io/') GitHub
+            a(
+              class='inner-btn' 
+              target='_blank' 
+              href='https://bthegarty.github.io/'
+              ) GitHub
       
       //-Row 2 buttons 
       div(class='projects-container')
-        a(target='_blank' href='https://www.shudder.com/') 
+        a(
+          target='_blank' 
+          href='https://www.shudder.com/'
+          ) 
           p(class='shudder') Shudder
         div(class='white-space')
-        a(target='_blank' href='https://www.sundancenow.com/') Sundance Now
+        a(
+          target='_blank' 
+          href='https://www.sundancenow.com/'
+          ) Sundance Now
         div(class='white-space')
-        a(target='_blank' href='https://github.com/bthegarty') GitHub
+        a(
+          target='_blank' 
+          href='https://github.com/bthegarty'
+          ) GitHub
     //-End projects section
     //- and seriously clean it up
     
@@ -243,43 +242,31 @@ html(lang='en')
       p Check out some of my recent projects here
       div(class='mp-container')
         //- animate the buttons? 
-        a(target='_blank' href='https://bthegarty.github.io/') Compiler
+        a(
+          target='_blank' 
+          href='https://bthegarty.github.io/'
+          ) Compiler
         div(class='white-space')
-        a(target='_blank' href='https://github.com/bthegarty/OFS-bthegarty.com-1.0') bthegarty 1.0
+        a(
+          target='_blank' 
+          href='https://github.com/bthegarty/OFS-bthegarty.com-1.0'
+          ) bthegarty 1.0
         div(class='white-space')
-        a(target='_blank' href='https://www.shudder.com/') Shudder
+        a(
+          target='_blank' 
+          href='https://www.shudder.com/'
+          ) Shudder
         div(class='white-space')
-        a(target='_blank' href='https://www.sundancenow.com/') Sundance Now
+        a(
+          target='_blank' 
+          href='https://www.sundancenow.com/'
+          ) Sundance Now
         div(class='white-space')
-        a(target='_blank' href='https://github.com/bthegarty') GitHub
+        a(
+          target='_blank' 
+          href='https://github.com/bthegarty'
+          ) GitHub
     //-End mobile projects section
-        
-    //- div(class='bottom-tag')
-      div(class='goodbye') See a balk is when you make a... okay it's actually any motion that goes towrads. I need to just start over
-    //- why would you type that? Did you really think there would be an easter egg here? of all the places to have one... I just don't get you  
-    
 
     //- end body content
-    //- start footer
-    div(class='container footer')
-      div(class='footer-top')
-        div(class='demo-section')
-          p Resources: 
-          a(target='_blank' href='https://pugjs.org/api/getting-started.html') PUG
-          a(target='_blank' href='https://sass-lang.com/documentation/file.SASS_REFERENCE.html') Sass
-          a(target='_blank' href='https://www.marist.edu/') Marsit
-        div(class='contact-section')
-          p Want to work with me?
-          a(class='contact' href='mailto:bthegarty@gmail.com') Contact
-        div(class='social-section')
-          p Follow me on:
-          a(target='_blank' href='https://www.linkedin.com/in/brendan-hegarty-a91186104/')
-            i(class='fab fa-linkedin-in fa-2x')
-          a(target='_blank' href='https://www.facebook.com/brendan.hegarty.14')
-            i(class='fab fa-facebook-f fa-2x')
-          a(target='_blank' href='https://www.instagram.com/b_hegs1/?hl=en')
-            i(class='fab fa-instagram fa-2x')
-          a(target='_blank' href='https://github.com/bthegarty')
-            i(class='fab fa-github fa-2x')
-    div(class='footer-divide')
-    div(class='container flexable') Marist College - Brendan Hegarty - Front-End Developer
+    include ./includes/footer.pug

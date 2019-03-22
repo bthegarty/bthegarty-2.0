@@ -253,17 +253,23 @@ section {
   .flexable {
     font-size: 30px !important; } }
 #welcome {
-  height: 725px;
+  height: 100vh;
   background-color: #2d3759;
   background-image: url("./logos/robots.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   z-index: 1; }
 
 .intro {
+  align-items: center;
   z-index: -1;
   color: #ad974f;
+  display: flex;
+  flex-direction: column;
   margin-top: 2em;
-  text-align: center;
+  justify-content: center;
   transform: translateY(85px); }
   .intro p {
     font-size: 64px; }
@@ -275,7 +281,7 @@ section {
     font-size: 24px; }
 
 .scroll {
-  margin-top: 13em;
+  margin-bottom: 5em;
   text-align: center; }
   .scroll a {
     color: #ad974f;
@@ -352,12 +358,12 @@ section {
   background-image: url("./logos/robots.png"); }
 
 .about-img {
-  padding-top: 1em;
+  margin-top: 1em;
   height: 75px;
   width: 75px; }
 
 .about-divide {
-  margin: 30px auto 30px auto;
+  margin: 30px auto;
   width: 75px;
   border-bottom: 1px solid #eaeaea; }
 
@@ -378,14 +384,14 @@ section {
   width: 50%;
   background-color: #2d3759; }
   .ab-container .ab-img {
-    padding-top: 15em;
+    margin-top: 15em;
     height: 275px;
     width: 275px; }
 
 .ab-2-con {
   height: auto;
   width: 50%;
-  padding-top: 4em; }
+  margin-top: 4em; }
   .ab-2-con h4 {
     padding-left: 1em;
     text-align: left; }
@@ -405,7 +411,6 @@ section {
   border-top: 1px solid #1c2237;
   height: 525px;
   background-color: #3e4c7b;
-  margin: 0 auto;
   padding: 0px 150px; }
 
 #career {
@@ -425,7 +430,6 @@ section {
   width: 33.33%;
   float: left;
   text-align: center;
-  color: #555;
   margin-top: -45px; }
   .job-box p {
     color: #eaeaea;
@@ -596,22 +600,17 @@ section {
           padding-left: 8em; }
 
   #about-page {
-    display: block;
-    height: auto; }
+    display: block; }
     #about-page .section-1 {
       width: 100%;
-      height: auto;
       padding-bottom: 5em; }
     #about-page .section-2 {
       width: 100%;
-      height: auto;
       padding-bottom: 5em;
       border-top: 2px solid #eaeaea;
       border-bottom: 2px solid #eaeaea; }
     #about-page .section-3 {
-      width: 100%;
-      height: auto;
-      padding-bottom: 5em; }
+      width: 100%; }
     #about-page .about-img {
       height: 175px;
       width: 175px; }
@@ -619,26 +618,23 @@ section {
   #about {
     display: none; }
 
-  #abroad {
-    height: auto; }
-    #abroad .ab-container {
-      height: auto;
-      display: flex;
-      justify-content: center; }
-    #abroad .ab-2-con {
-      width: 100%; }
-    #abroad h4 {
-      font-size: 44px; }
-    #abroad p {
-      font-size: 34px; }
-    #abroad img {
-      align-items: center;
-      justify-content: center;
-      padding: 0; }
-    #abroad .img-align {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+  #abroad .ab-container {
+    display: flex;
+    justify-content: center; }
+  #abroad .ab-2-con {
+    width: 100%; }
+  #abroad h4 {
+    font-size: 44px; }
+  #abroad p {
+    font-size: 34px; }
+  #abroad img {
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+  #abroad .img-align {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   #career {
     display: none; }
@@ -877,8 +873,7 @@ h4 {
   padding: 1em; }
 
 .container {
-  padding-top: 2em;
-  padding-bottom: 2em; }
+  padding-top: 2em; }
 
 .flexin {
   font-family: "Lobster", cursive; }

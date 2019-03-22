@@ -4,7 +4,7 @@ var app = express();
 var router = express.Router();
 var path = require('path');
 // heroku requires this be a declared variable
-var port = process.env.PORT || 8080
+var port = process.env.PORT || 8081
 
 app.use('/',router);
 app.set('view engine', 'pug');
@@ -27,5 +27,5 @@ app.use('/work',function(req, res){
 });
 
 app.listen(port,function(){
-  console.log('Server running at Port 8080');
+  console.log('Server running at Port 8081');
 });
