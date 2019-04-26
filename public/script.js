@@ -1,21 +1,3 @@
-// Start scroll
-$(function(){
-  var header =  $('.navbar');
-
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if(scroll >= 50){
-      header.addClass('scrolled');
-    }
-    else if(scroll < 50){
-      header.removeClass('scrolled');
-    }
-    else{
-      hearder.removeClass('scrolled');
-    }
-  });
-});
-// end scroll
 // active
 $(document).ready(function () {
     $(document).on("scroll", onScroll);

@@ -1,14 +1,14 @@
 @import 'colors';
 
 .footer{
-  background-color: $navy;
-  color: $light-grey;
+  background-color: $white;
+  color: $bronze;
   padding: 1em !important;
   // width: 100%;
 
   align-items: center;
   a{
-    color: $light-grey;
+    color: $bronze;
     padding-left: 0.3em;
     padding-right: 0.3em;
   }
@@ -24,7 +24,7 @@
         font-size: 20px;
       }
       a{
-        border: 2px solid $bronze;
+        border: 2px solid $navy;
         background-color: transparent;
         text-decoration: none;
         color: $bronze;
@@ -36,7 +36,7 @@
         outline: 0;
       }
       a:hover{
-        background-color: $light-grey;
+        background-color: $bronze;
         color: $navy;
         transition: 0.5s;
         cursor: pointer;
@@ -72,18 +72,18 @@
 .flexable{
   text-align: center;
   display: block;
-  color: $white;
+  color: $bronze;
   padding: 1em;
 }
 
 .footer-divide{
   margin: 5px auto 5px auto;
   width: 575px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $navy;
 }
 
 .footer a:hover{
-  color: $bronze;
+  color: $navy;
   transition: color 0.3s linear;
 }
 

@@ -8,57 +8,37 @@ ul{
 
 .navbar{
   list-style: none;
-  margin: 0;
-  overflow: hidden;
-  position: fixed;
+  margin: 10px 0;
   top: 0;
   width: 100%;
   transition: 0.5s;
-  z-index: 999;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  z-index: 1;
   display: flex;
-
   align-items: baseline;
 
   .flexin{
     margin-right: auto;
     font-size: 22px;
   }
+  li{
+    margin: 0 15px;
+  }
 }
 
 .navbar a{
   text-decoration: none;
   display: block;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-bottom: 1em;
-  color: $light-grey;
+  color: $bronze;
 }
 
 .navbar a:hover{
-  color: $bronze;
+  color: $navy;
 }
 
 .active, .btn:hover{
   color: $bronze !important;
 }
 
-.end-nav{
-  padding-right: 1em;
-}
-
-.scrolled{
-  background-color: $navy;
-  transition: 0.5s;
-}
-
-.scrolled a{
-  color: $light-grey;
-}
 
 // mobile nav support
 $variable-menu-animation-time:        2s;

@@ -1,38 +1,41 @@
 @import 'colors';
 
-#welcome{
-  height: 100vh;
-  background-color: $deep-blue;
-  background-image: url("./logos/robots.png");
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  z-index: 1;
+.pt-perspective {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	perspective: 1200px;
+	transform-style: preserve-3d;
 }
 
-.intro{
-  align-items: center;
-  z-index: -1;
-  color: $bronze;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2em;
-  justify-content: center;
-  transform: translateY(85px);
-  p{
-    font-size: 64px;
-  }
+.pt-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
 }
-
-
-.social-home{
-  padding-bottom: 2em;
-  a{
-    padding: 1.5em;
-    font-size: 24px;
-  }
-}
+//
+// .pt-page-current,
+// .no-js .pt-page {
+// 	visibility: visible;
+// }
+//
+// .no-js body {
+// 	overflow: auto;
+// }
+//
+// .pt-page-ontop {
+// 	z-index: 999;
+// }
+//
+// .pt-page-scaleUp {
+// 	animation: scaleUp .7s ease both;
+// }
 
 .scroll{
   margin-bottom: 5em;
@@ -49,7 +52,7 @@
 }
 
 .scroll a:hover{
-  color: $light-grey;
+  color: $navy;
 }
 
 .scroll a span{
@@ -58,11 +61,9 @@
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
   transform: rotate(-45deg);
-  -webkit-animation: sdb05 1.5s infinite;
   animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
@@ -91,518 +92,5 @@
   100% {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
-  }
-}
-
-// about page
-
-#about-page{
-  border-top: 1px solid $light-grey;
-  height: 656px;
-  display: flex;
-  color: $light-grey;
-  text-align: center;
-  line-height: 1.2;
-  .section-1{
-    background-color: $blue;
-    background-image: url("./logos/clean-gray-paper.png");
-    height: 100%;
-    width: 33.33%;
-  }
-
-  .section-2{
-    background-color: $light-grey;
-    background-image: url("./logos/embossed-paper.png");
-    height: 100%;
-    width: 33.33%;
-    color: $navy;
-    .about-divide{
-      border-bottom: 1px solid $navy;
-    }
-  }
-
-  .section-3{
-    background-color: $blue;
-    background-image: url("./logos/clean-gray-paper.png");
-    height: 100%;
-    width: 33.33%;
-  }
-}
-//buffer
-#about{
-  height: 69px;
-  background-color: $deep-blue;
-  background-image: url("./logos/robots.png");
-}
-
-.about-img{
-  margin-top: 1em;
-  height: 75px;
-  width: 75px;
-}
-
-.about-divide{
-  margin: 30px auto;
-  width: 75px;
-  border-bottom: 1px solid $light-grey;
-}
-
-.college{
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 24px;
-}
-
-// abroad page
-
-#abroad{
-  height: 656px;
-  background-color: $light-grey;
-  text-align: center;
-  display: flex;
-  border-top: 1px solid $light-grey;
-}
-
-.ab-container{
-  height: 100%;
-  width: 50%;
-  background-color: $deep-blue;
-  .ab-img{
-    margin-top: 15em;
-    height: 275px;
-    width: 275px;
-  }
-}
-
-.ab-2-con{
-  height: auto;
-  width: 50%;
-  margin-top: 4em;
-  h4{
-    padding-left: 1em;
-    text-align: left;
-  }
-  p{
-    padding-left: 2em;
-    line-height: 1.2;
-    text-align: left;
-    max-width: 720px;
-    a{
-      color: $navy;
-      text-decoration: none;
-    }
-  }
-}
-
-.learn:hover{
-  color: $dark-bronze;
-}
-
-// career page
-
-#career-page{
-  border-top: 1px solid $navy;
-  height: 525px;
-  background-color: $blue;
-  padding: 0px 150px;
-}
-
-//buffer
-#career{
-  height: 69px;
-  background-color: $light-grey;
-}
-
-#career-tag{
-  border-top: 1px solid $light-grey;
-  background-color: $light-blue;
-  text-align: center;
-  height: 50px;
-  padding: 50px 0px;
-  font-size: 34px;
-  justify-content: center;
-}
-
-.job-box{
-  width: 33.33%;
-  float: left;
-  text-align: center;
-  margin-top: -45px;
-  p{
-    color: $light-grey;
-    font-size: 24px;
-    line-height: 1.2;
-    padding: 0 35px;
-  }
-}
-
-.job-circle{
-  background-color: $blue;
-  width: 112px;
-  height: 96px;
-  padding-top: 25px;
-  margin: 0px auto;
-  border-radius: 56px;
-}
-.job-title{
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: $light-grey;
-}
-
-.job-amc{
-  line-height: 20px;
-  img{
-    height: 35px;
-    width: 80px;
-  }
-}
-
-.job-mlb, .job-bam{
-  img{
-    height: 45px;
-  }
-}
-
-.great-divide{
-  margin: 30px auto 30px auto;
-  width: 75px;
-  border-bottom: 1px solid $light-grey;
-}
-
-// projects page
-
-#projects{
-  padding-top: 80px;
-  height: 576px;
-  // background-color: $white;
-  background-image: url("./logos/sativa.png");
-  text-align: center;
-  .inner-btn{
-    display: none;
-  }
-  .projects-box{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 2em;
-    width: 100%;
-    max-width: 2080px;
-    margin: 0 auto;
-    .boxes{
-      width: 15%;
-      height: 150px;
-      border-radius: 10px;
-      border: 3px solid $bronze;
-      text-decoration: none;
-      background-color: $navy;
-      color: $light-grey;
-      .label{
-        position: relative;
-        top: -10px;
-        span{
-          background-color: $bronze;
-          border-radius: 30px;
-          padding: 0 20px;
-          align-items: center;
-        }
-      }
-      p{
-        // margin: 0;
-        padding: 0 10px;
-      }
-      img{
-        height: 12px;
-        padding: 0 3px;
-      }
-      .sn{
-        height: 12px;
-      }
-    }
-  }
-  .projects-container{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 2em;
-    width: 100%;
-    max-width: 2080px;
-    margin: 0 auto;
-    a{
-      width: 15%;
-      height: 30px;
-      border-radius: 45px;
-      border: 2px solid $navy;
-      text-decoration: none;
-      color: $navy;
-      padding-top: 10px;
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-    }
-    a:hover{
-      color: $bronze;
-      background-color: $navy;
-      border: 2px solid $bronze;
-      transition: 0.5s;
-    }
-    .shudder{
-      margin: 0;
-    }
-    .shudder:hover{
-      -webkit-animation: shake .1s infinite ease-in-out;
-      animation: shake .1s infinite ease-in-out;
-    }
-  }
-}
-
-.white-space{
-  width: 50px;
-}
-
-.screen{
-  height: 33%;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 6em;
-  .screen-text{
-    background-color: $navy;
-    border-radius: 15px;
-    text-align: left;
-    font-size: 24px;
-    padding: 1em;
-    color: $light-grey;
-    -webkit-font-smoothing: antialiased;
-  }
-}
-
-#projects-m{
-  display: none;
-}
-
-//what makes you shudder?
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  30% { transform: translate(2px, 1px) rotate(0deg); }
-  40% { transform: translate(0px, -1px) rotate(1deg); }
-  60% { transform: translate(-1px, 0px) rotate(0deg); }
-  70% { transform: translate(1px, 0px) rotate(-1deg); }
-  90% { transform: translate(0px, 1px) rotate(0deg); }
-  100% { transform: translate(0px, -1px) rotate(-1deg); }
-}
-
-@media only screen and (max-width: 1020px) {
-    #welcome{
-      height: -webkit-fill-available;
-      .intro{
-        margin-left: 0;
-        text-align: center;
-        font-size: 94px;
-        margin-top: 2em;
-      }
-      p{
-        margin-left: 0;
-        font-size: 64px;
-      }
-      .bg-bubbles{
-        li{
-          display: none;
-        }
-      }
-
-      .scroll{
-        margin: 0;
-        .scroll-icon{
-          display: none;
-        }
-        .social-home{
-          display: grid;
-          a{
-            padding: 1.5em;
-            font-size: 44px;
-          }
-          .link{
-            padding-right: 8em;
-          }
-          .face{
-            padding-right: 3em;
-          }
-          .insta{
-            padding-left: 3em
-          }
-          .git{
-            padding-left: 8em;
-          }
-        }
-      }
-    }
-
-    #about-page{
-      display: block;
-      .section-1{
-        width: 100%;
-        padding-bottom: 5em;
-      }
-      .section-2{
-        width: 100%;
-        padding-bottom: 5em;
-        border-top: 2px solid $light-grey;
-        border-bottom: 2px solid $light-grey;
-      }
-      .section-3{
-        width: 100%;
-      }
-      .about-img{
-        height: 175px;
-        width: 175px;
-      }
-    }
-
-    #about{
-      display: none;
-    }
-
-    #abroad{
-      .ab-container{
-        display: flex;
-        justify-content: center;
-      }
-      .ab-2-con{
-        width: 100%;
-        // this padding needs adjusting for smaller screens
-      }
-      h4{
-        font-size: 44px;
-      }
-      p{
-        font-size: 34px;
-      }
-      img{
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-      }
-      .img-align{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-
-    #career{
-      display: none;
-    }
-
-    #career-tag{
-      height: auto;
-    }
-
-    .screen{
-      height: auto;
-      padding-top: 1em;
-    }
-    .inner-btn{
-      display: none !important;
-    }
-
-    #projects{
-      display: none;
-    }
-
-    #projects-m{
-      display: block;
-      text-align: center;
-      border-top: 2px solid $light-grey;
-      padding-bottom: 5em;
-      background-image: url("./logos/sativa.png");
-      .white-space{
-        height: 55px;
-      }
-      a{
-        text-decoration: none;
-        border-radius: 65px;
-        font-size: 24px;
-        letter-spacing: 2px;
-        border: 4px solid $navy;
-        color: $navy;
-        padding: 25 175px;
-        box-shadow: 0 2px 4px 2px rgba(0,0,0,.5);
-        -webkit-font-smoothing: antialiased;
-      }
-      .mp-container{
-        display: grid;
-        justify-content: center;
-      }
-      p{
-        color: $light-grey;
-        font-size: 30px;
-        padding: 1em;
-        background-color: rgba(28, 34, 55, 0.8);
-      }
-    }
-
-    #career-page{
-      padding: 0;
-      padding-bottom: 2em;
-      height: auto;
-      p{
-        color: $navy !important;
-      }
-      .job-box{
-        width: auto;
-        float: none;
-        padding-top: 2em;
-        margin-top: 0;
-        display: flex;
-        justify-content: center;
-      }
-      .job-circle{
-        background-color: $light-grey;
-      }
-      .job-mlb{
-        width: 90%;
-        background-color: $light-grey;
-        border-radius: 16px;
-        padding-bottom: 1em;
-        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-        img{
-          height: 75px;
-        }
-      }
-      .job-amc{
-        width: 90%;
-        background-color: $light-grey;
-        border-radius: 16px;
-        padding-bottom: 1em;
-        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-        img{
-          height: 55px;
-          width: 140px;
-        }
-      }
-      .job-bam{
-        width: 90%;
-        background-color: $light-grey;
-        border-radius: 16px;
-        padding-bottom: 1em;
-        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
-        img{
-          height: 75px;
-        }
-      }
-    }
-    .job-title{
-      color: $navy;
-      font-size: 40px;
-    }
-}
-
-@media only screen and (min-width: 1020px) and (max-width: 1250px) {
-  #career-page{
-    .job-box{
-      p{
-        font-size: 18px;
-      }
-    }
   }
 }
