@@ -2,14 +2,14 @@
 @import 'footer';
 @import 'colors';
 @import 'pages';
-@import 'animate';
 @import 'not-found';
 
-$font: 'Roboto Condensed', sans-serif;
+$font: 'Ubuntu', sans-serif;
 $lobster: 'Lobster', cursive;
 
 body, html{
-  background-color: $white;
+  background-color: $spring-green;
+  color: $cream-green;
   font-family: $font;
   font-size: 16px;
   margin: 0;

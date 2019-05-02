@@ -3,21 +3,23 @@ html(lang='en')
     include ./includes/header.pug
     
   body
-    include ./includes/nav.pug
     div(
       id='pt-main'
       class='pt-perspective'
       )
       div(
-        id='welcome' 
+        id='welcome'
         class='container pt-page pt-page-1'
         )
-        h1(class='intro animate-reveal animate-first') Brendan Hegarty
-          div(class='animate-reveal animate-second') Web Developer      
+        div(class='welcome-text')
+          h1(class='heading') Brendan Hegarty
+            div(class='subheading') Web Developer
+          button(class='button') Enter
+        include ./includes/svg.pug
         //- include ./includes/social-scroll-animation.pug
       div(
         id='toggle-id'
-        class='pt-page pt-page 2'
+        class='pt-page pt-page-2'
         )
-        div here's some more stuff  
-    include ./includes/footer.pug
+        div here's some more stuff
+    include ./includes/footer.pug    
