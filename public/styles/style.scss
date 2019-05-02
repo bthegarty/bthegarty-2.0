@@ -48,7 +48,6 @@ h4{
   margin: 0 auto;
 }
 
-//fonts per section
-.flexin{
-  font-family: $lobster;
+::selection {
+  background-color: $purple-grey;
 }

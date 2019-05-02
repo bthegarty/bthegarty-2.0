@@ -8,18 +8,23 @@ html(lang='en')
       class='pt-perspective'
       )
       div(
-        id='welcome'
+        id='js-pt-page-1'
         class='container pt-page pt-page-1'
+        data-cat-id=catIndex
         )
         div(class='welcome-text')
           h1(class='heading') Brendan Hegarty
             div(class='subheading') Web Developer
-          button(class='button') Enter
+          button(class='button' id='js-enter') Enter
         include ./includes/svg.pug
         //- include ./includes/social-scroll-animation.pug
+      //- page 2 like structured collections  
       div(
-        id='toggle-id'
+        id='js-pt-page-2'
         class='pt-page pt-page-2'
         )
-        div here's some more stuff
+        div(class='welcome-text')
+          h1(class='heading') About Me 
+            div(class='subheading') AMC Networks
+          button(class='button back' id='js-back') Back
     include ./includes/footer.pug    
