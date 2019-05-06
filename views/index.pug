@@ -8,23 +8,28 @@ html(lang='en')
       class='pt-perspective'
       )
       div(
-        id='js-pt-page-1'
-        class='container pt-page pt-page-1'
-        data-cat-id=catIndex
+        id='js-pt-page'
+        class='container pt-page'
         )
-        div(class='welcome-text')
+        div(class='page-inner pt-page-1')
           h1(class='heading') Brendan Hegarty
             div(class='subheading') Web Developer
-          button(class='button' id='js-enter') Enter
+          //- consider moving this with position absolute orrrrr use css bs
+          
         include ./includes/svg.pug
-        //- include ./includes/social-scroll-animation.pug
-      //- page 2 like structured collections  
-      div(
-        id='js-pt-page-2'
-        class='pt-page pt-page-2'
-        )
-        div(class='welcome-text')
-          h1(class='heading') About Me 
-            div(class='subheading') AMC Networks
-          button(class='button back' id='js-back') Back
-    include ./includes/footer.pug    
+        //- page 2 like structured collections
+        //- logo.jpeg
+        div(class='page-inner pt-page-2')
+          h1(class='heading') About Me
+          div(class='job-tile-wrapper')
+            include ./includes/job-tile.pug
+        
+        div(class='page-inner pt-page-3')
+        button(
+          class='button' 
+          id='js-enter'
+          )
+          div(class='enter') Enter
+          div(class='back') Back  
+        
+    include ./includes/footer.pug

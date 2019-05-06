@@ -1,0 +1,11 @@
+{
+	"pt-page-1": {
+		"name": "Brendan Hegarty",
+    "position": "Web Developer",
+    "enter": "enter",
+    "back": "back"
+	},
+  "pt-page-2": {
+    "about": "About Me"
+  }
+}
