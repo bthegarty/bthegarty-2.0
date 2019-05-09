@@ -4,32 +4,38 @@ html(lang='en')
     
   body
     div(
-      id='pt-main'
-      class='pt-perspective'
+      id='js-pt-page'
+      class='container pt-page'
       )
-      div(
-        id='js-pt-page'
-        class='container pt-page'
-        )
-        div(class='page-inner pt-page-1')
-          h1(class='heading') Brendan Hegarty
-            div(class='subheading') Web Developer
-          //- consider moving this with position absolute orrrrr use css bs
-          
-        include ./includes/svg.pug
-        //- page 2 like structured collections
-        //- logo.jpeg
-        div(class='page-inner pt-page-2')
-          h1(class='heading') About Me
-          div(class='job-tile-wrapper')
-            include ./includes/job-tile.pug
-        
-        div(class='page-inner pt-page-3')
+      div(class='page-inner pt-page-1')
+        h1(class='heading') E Ploribis
+          div(class='subheading') Unum
         button(
-          class='button' 
+          class='button spacing'
           id='js-enter'
           )
           div(class='enter') Enter
-          div(class='back') Back  
+          div(class='back') Back
+        //- consider moving this with position absolute orrrrr use css bs
+      //- page 2 like structured collections
+      div(class='page-inner pt-page-2')
+        h1(class='page-heading') E Ploribis Unum
+        div(class='job-tile-wrapper')
+          include ./includes/job-tile.pug
         
-    include ./includes/footer.pug
+      //-tabs for career 
+      div(class='tabs')
+        button(class='button tabButton' onclick='eventTest(event, "test1")') Test
+        button(class='button tabButton' onclick='eventTest(event, "test2")') Test
+        button(class='button tabButton' onclick='eventTest(event, "test3")') Test
+        
+      div(class='tabContent' id='test1')
+        div la la la la la. la la la la la
+      
+      div(class='tabContent' id='test1')
+        div tests tests tests tests
+        
+      div(class='tabContent' id='test1')
+        div and im hayden christianson    
+          
+      //- include ./includes/footer.pug

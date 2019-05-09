@@ -1,0 +1,9 @@
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid $cyan-bright;
+
+  .tabButton {
+    margin: 0 10px 10px 10px;
+  }
+}

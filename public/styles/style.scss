@@ -4,10 +4,11 @@
 @import 'job-tile';
 @import 'pages';
 @import 'not-found';
+@import 'tabs';
 
 $font: 'Ubuntu', sans-serif;
 
-body, html{
+body, html {
   background-color: $spring-green;
   color: $cream-green;
   font-family: $font;
@@ -15,33 +16,34 @@ body, html{
   margin: 0;
 }
 
-p{
+p {
   font-size: 16px;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-h1{
+h1 {
   font-size: 75px;
 }
 
-h2{
+h2 {
   font-size: 45px;
 }
 
-h3{
+h3 {
   font-size: 35px;
 }
 
-h4{
+h4 {
   font-size: 25px;
 }
 
 // classes
 
-.container{
+.container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
 ::selection {
