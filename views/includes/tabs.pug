@@ -1,23 +1,25 @@
 div(class='container')  
   div(class='tabSection')
+    -var tabID = [0]
     div(class='tabs')
-      button(class='button tabButton' onclick='openTab(event, "test1")') Test
-      button(class='button tabButton' onclick='openTab(event, "test2")') Test
-      button(class='button tabButton' onclick='openTab(event, "test3")') Test
+      button(class='button js-tabButton' data-cat-id=tabID++) Test
+      button(class='button js-tabButton' data-cat-id=tabID++) Test
+      button(class='button js-tabButton' data-cat-id=tabID++) Test
       
-    div(class='tabContent-container')  
+    div(class='tabContent-container' id='js-tab-container')  
       div(class='divider')
-      div(class='tabContent active' id='test1')
+      -var tabID = [0]
+      div(class='tabContent active' data-cat-id=tabID++ id='test1')
         //- div 
           //- image 
         div(class='tab-header') teseter
         div la la la la la. la la la la la
           //- text
       
-      div(class='tabContent' id='test2')
+      div(class='tabContent' data-cat-id=tabID++ id='test2')
         div(class='tab-header') teseter 2
         div tests tests tests tests
         
-      div(class='tabContent' id='test3')
+      div(class='tabContent' data-cat-id=tabID++ id='test3')
         div(class='tab-header') teseter 3
         div and im hayden christianson

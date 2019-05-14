@@ -308,7 +308,7 @@ button {
       opacity: .6;
       width: 100%; }
   .tabSection .tabContent {
-    margin: 30px;
+    margin: 15px 30px;
     display: none;
     flex-direction: column; }
     .tabSection .tabContent .tab-header {
