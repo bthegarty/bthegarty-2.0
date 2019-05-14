@@ -8,7 +8,11 @@
 
 $font: 'Ubuntu', sans-serif;
 
-body, html {
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
   background-color: $spring-green;
   color: $cream-green;
   font-family: $font;
@@ -42,8 +46,11 @@ h4 {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
   padding: 0 25px;
+}
+
+.center {
+  margin: 0 auto;
 }
 
 ::selection {

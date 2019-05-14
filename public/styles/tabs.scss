@@ -1,9 +1,59 @@
-.tabs {
-  display: flex;
-  justify-content: flex-start;
-  border-bottom: 1px solid $cyan-bright;
+.tabSection {
+  max-width: 800px;
+  margin: 0 auto;
 
-  .tabButton {
-    margin: 0 10px 10px 10px;
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+
+    button {
+      margin: 0 0 10px 30px;
+      padding: 0;
+    }
+  }
+
+  .tabContent-container {
+    width: 100%;
+
+    .divider {
+      height: 1px;
+      border-bottom: 1px solid $cyan-bright;
+      margin: 20px 0;
+      opacity: .6;
+      width: 100%;
+    }
+  }
+
+  .tabContent {
+    margin: 30px;
+    display: none;
+    flex-direction: column;
+
+    .tab-header {
+      font-size: 30px;
+      letter-spacing: 1px;
+      margin: 20px 0;
+      position: relative;
+      text-transform: uppercase;
+      width: max-content;
+
+      &:after {
+        background-color: $cyan-bright;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 10px;
+        bottom: 2px;
+        right: -6px;
+        left: -6px;
+        opacity: .8;
+        z-index: -1;
+      }
+    }
+
+    &.active {
+      display: flex;
+    }
   }
 }

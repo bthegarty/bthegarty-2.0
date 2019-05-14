@@ -1,3 +1,23 @@
-.tabs {
-  
-}
+div(class='container')  
+  div(class='tabSection')
+    div(class='tabs')
+      button(class='button tabButton' onclick='openTab(event, "test1")') Test
+      button(class='button tabButton' onclick='openTab(event, "test2")') Test
+      button(class='button tabButton' onclick='openTab(event, "test3")') Test
+      
+    div(class='tabContent-container')  
+      div(class='divider')
+      div(class='tabContent active' id='test1')
+        //- div 
+          //- image 
+        div(class='tab-header') teseter
+        div la la la la la. la la la la la
+          //- text
+      
+      div(class='tabContent' id='test2')
+        div(class='tab-header') teseter 2
+        div tests tests tests tests
+        
+      div(class='tabContent' id='test3')
+        div(class='tab-header') teseter 3
+        div and im hayden christianson

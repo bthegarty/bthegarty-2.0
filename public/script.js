@@ -10,6 +10,15 @@ const transition = () => {
   button.addEventListener('click', toggle)
 }
 
+const openTab = (e, tabName) => {
+  const tabContent = document.getElementsByClassName('tabContent')
+  for(let i = 0; i < tabContent.length; i++) {
+    // tabContent[i].style.display = 'none'
+  }
+  document.getElementById(tabName).style.display = 'flex'
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   transition()
+  openTab()
 })

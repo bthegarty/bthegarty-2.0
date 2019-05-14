@@ -3,39 +3,28 @@ html(lang='en')
     include ./includes/header.pug
     
   body
-    div(
-      id='js-pt-page'
-      class='container pt-page'
-      )
-      div(class='page-inner pt-page-1')
-        h1(class='heading') E Ploribis
-          div(class='subheading') Unum
-        button(
-          class='button spacing'
-          id='js-enter'
-          )
-          div(class='enter') Enter
-          div(class='back') Back
-        //- consider moving this with position absolute orrrrr use css bs
-      //- page 2 like structured collections
-      div(class='page-inner pt-page-2')
-        h1(class='page-heading') E Ploribis Unum
-        div(class='job-tile-wrapper')
+    div(class='container center')
+      div(class='pt-page')
+        div(class='page-inner pt-page-1')
+          h1(class='heading') E Ploribis
+            div(class='subheading') Unum
+          button(
+            class='button spacing'
+            id='js-enter'
+            )
+            div(class='enter') Enter
+            div(class='back') Back
+          //- consider moving this with position absolute orrrrr use css bs
+        //- page 2 like structured collections
+        div(class='page-inner pt-page-2')
+          h1(class='page-heading') E Ploribis Unum
+          div(class='job-tile-wrapper')
+            include ./includes/job-tile.pug
+          
+        //-tabs for career 
+        include ./includes/tabs.pug
+        
+        div(class='pt-page')
           include ./includes/job-tile.pug
-        
-      //-tabs for career 
-      div(class='tabs')
-        button(class='button tabButton' onclick='eventTest(event, "test1")') Test
-        button(class='button tabButton' onclick='eventTest(event, "test2")') Test
-        button(class='button tabButton' onclick='eventTest(event, "test3")') Test
-        
-      div(class='tabContent' id='test1')
-        div la la la la la. la la la la la
-      
-      div(class='tabContent' id='test1')
-        div tests tests tests tests
-        
-      div(class='tabContent' id='test1')
-        div and im hayden christianson    
           
       //- include ./includes/footer.pug
