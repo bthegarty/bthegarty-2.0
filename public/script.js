@@ -1,45 +1,29 @@
-const transition = () => {
-  const button = document.getElementById('js-enter')
+//- split pathname client side and add active state
+$(function() {
+  $('ul a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('selected');
+});
 
-  function toggle (e) {
-    const target = e.currentTarget
-    const page1 = document.getElementById('js-pt-page')
-    page1.classList.toggle('page-2')
-  }
-
-  button.addEventListener('click', toggle)
-}
-
-const openTab = (e, tabName) => {
-  const tabButton = document.getElementsByClassName('tabButton')
-  const tabContainer = document.getElementById('js-tab-container')
-  const tabContent = tabContainer.getElementsByClassName('tabContent')
-  for (let i = 0; i < tabButton.length; i++) {
-    tabButton[i].addEventListener('click', function() {
-    let current = document.getElementsByClassName('active')
-    current[0].className = current[0].className.replace(' active', '')
-    this.className += " active";
-  })
-  }
-}
 
 const openTab2 = () => {
-  const tabButton = document.getElementsByClassName('js-tabButton')
-  const id = 1
+  const tab_1_Button = document.getElementById('js-tabButton-1')
+  const tab_1_content = document.getElementById('test1')
+  const tab_2_Button = document.getElementById('js-tabButton-2')
+  const tab_2_content = document.getElementById('test2')
 
-  function active (e) {
-    const target = e.currentTarget
-    const tabContent = document.querySelector('div.tabContent[data-cat-id="' + id + '"]')
-    console.log('CON =', tabContent)
-    // tabContent.classList.toggle('active')
+  function restore () {
+    tab_2_content.classList.remove('active')
+    tab_1_content.classList.add('active')
   }
 
-  for (let i = 0; i < tabButton.length; i++) {
-    tabButton[i].addEventListener('click', active)
+  function active () {
+    tab_1_content.classList.remove('active')
+    tab_2_content.classList.add('active')
   }
+
+  tab_1_Button.addEventListener('click', restore)
+  tab_2_Button.addEventListener('click', active)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  transition()
   openTab2()
 })

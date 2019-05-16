@@ -6,25 +6,9 @@ html(lang='en')
     div(class='container center')
       div(class='pt-page')
         div(class='page-inner pt-page-1')
-          h1(class='heading') E Ploribis
-            div(class='subheading') Unum
-          button(
-            class='button spacing'
-            id='js-enter'
-            )
-            div(class='enter') Enter
-            div(class='back') Back
-          //- consider moving this with position absolute orrrrr use css bs
-        //- page 2 like structured collections
-        div(class='page-inner pt-page-2')
-          h1(class='page-heading') E Ploribis Unum
-          div(class='job-tile-wrapper')
-            include ./includes/job-tile.pug
-          
-        //-tabs for career 
-        include ./includes/tabs.pug
-        
-        div(class='pt-page')
-          include ./includes/job-tile.pug
-          
-      //- include ./includes/footer.pug
+          h1(class='heading animate-reveal animate-first') E Ploribis
+            div(class='subheading') Unum 
+          a(class='button spacing' href='/about')
+            div(class='enter animate-reveal animate-first') Enter
+          a(class='bh-image animate-reveal animate-first' href='/about')
+      include ./includes/footer.pug

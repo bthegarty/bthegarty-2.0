@@ -1,0 +1,19 @@
+html(lang='en')
+  head
+    include ./includes/header.pug
+    
+  body
+    div(class='container desc-sec')
+      include ./includes/nav.pug
+      div(class='pt-page')
+        div(class='top-desc animate-reveal animate-first')
+          div(class='desc-header') Test Header
+          div(class='desc-body') Test sentence for a little test description
+        //- div(class='page-inner pt-page-2 animate-reveal animate-second')
+          h1(class='page-heading') E Ploribis Unum
+          div(class='job-tile-wrapper')
+            include ./includes/job-tile.pug
+    div(class='container')
+      div(class='pt-page')
+        include ./includes/tabs.pug
+    include ./includes/footer.pug

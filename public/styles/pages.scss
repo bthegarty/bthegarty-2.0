@@ -1,6 +1,6 @@
 @import 'colors';
 
-button {
+.button {
 	background-color: transparent;
 	border: none;
 	color: inherit;
@@ -8,6 +8,7 @@ button {
 	display: flex;
 	font-size: 22px;
 	text-transform: uppercase;
+	text-decoration: none;
 
 	&.spacing {
 		letter-spacing: 2.5px;
@@ -24,7 +25,7 @@ button {
 	}
 
 	&:hover {
-		color: $cyan-bright;
+		color: $light-grey;
 		transition: .4s ease-in-out;
 	}
 }
@@ -32,6 +33,10 @@ button {
 .subheading {
 	font-size: 44px;
 	margin-top: 10px;
+	// border for something
+	// border: 8px solid;
+	// border-image: linear-gradient(to left, $space-blue, $glass-blue, $sprung-green);
+	// border-image-slice: 30 30 30 30;
 }
 
 .pt-page {
@@ -42,7 +47,6 @@ button {
 
 	.pt-page-1 {
 		height: 100vh;
-		background-color: $spring-green;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -108,5 +112,57 @@ button {
 
 	@media screen and (max-width: 929px) {
 		justify-content: center;
+	}
+}
+
+.bh-image {
+	margin: 15px;
+	height: 50px;
+	width: 50px;
+	background-image: url("./logos/bh-grey.png");
+	background-size: contain;
+	transition: .4s ease-in-out;
+
+	&:hover {
+		background-image: url('./logos/bh-red.png');
+		transition: .4s ease-in-out;
+	}
+}
+
+// about page
+
+.desc-sec {
+	background-color: $grey;
+	color: $white;
+
+	.top-desc {
+		margin: 125px auto;
+
+		.desc-header {
+			font-size: 35px;
+			font-size: 30px;
+      letter-spacing: 1px;
+      margin: 20px 0;
+      position: relative;
+      text-transform: uppercase;
+      width: max-content;
+
+      &:after {
+        background-color: $red;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 10px;
+        bottom: 2px;
+        right: -6px;
+        left: -6px;
+        opacity: .8;
+        z-index: -1;
+      }
+		}
+
+		.desc-body {
+			font-size: 18px;
+		}
 	}
 }

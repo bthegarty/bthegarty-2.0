@@ -1,3 +1,4 @@
+@import 'animate';
 @import 'header';
 @import 'footer';
 @import 'colors';
@@ -13,8 +14,8 @@ html {
 }
 
 body {
-  background-color: $spring-green;
-  color: $cream-green;
+  background-color: $white;
+  color: $grey;
   font-family: $font;
   font-size: 16px;
   margin: 0;
@@ -54,5 +55,6 @@ h4 {
 }
 
 ::selection {
-  background-color: $purple-grey;
+  background-color: $red;
+  color: $white;
 }

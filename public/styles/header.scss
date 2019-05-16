@@ -1,38 +1,42 @@
 @import 'colors';
 
-$font: 'Roboto Condensed', sans-serif;
-
-ul{
-  padding: 0;
-}
-
 .navbar{
-  list-style: none;
-  margin: 10px 0;
-  top: 0;
-  width: 100%;
   transition: 0.5s;
-  z-index: 1;
   display: flex;
-  align-items: baseline;
+  justify-content: center;
 
-  .flexin{
-    margin-right: auto;
-    font-size: 22px;
+  ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
   }
+
   li{
-    margin: 0 15px;
+    margin: 10px 15px;
   }
 }
 
 .navbar a{
+  color: $white;
   text-decoration: none;
-  display: block;
-  color: $bronze;
+  display: flex;
+  padding-bottom: 5px;
+
+  &.selected {
+    background: linear-gradient(to left, $space-blue, $glass-blue, $sprung-green)left bottom no-repeat;
+    background-size: 100% 3px;
+    color: $red;
+
+    &:hover {
+      color: $red;
+    }
+  }
 }
 
 .navbar a:hover{
-  color: $navy;
+  color: $light-grey;
+  // font-size: 14px;
+  // transition: 0.5s;
 }
 
 
@@ -68,7 +72,7 @@ section{
   right: 1.25em;
   width: 4em;
   height: 3px;
-  background-color: $navy;
+  background-color: $purple-grey;
   border-radius: 2px;
   cursor: pointer;
   z-index: 1000;
@@ -104,9 +108,9 @@ section{
   height: 8em;
   margin: 0;
   padding: 0;
-  background-color: $light-grey;
+  background-color: $cyan-bright;
   border-bottom-left-radius: 100%;
-  box-shadow: 3px 3px 7px rgba($grey, .2);
+  box-shadow: 3px 3px 7px rgba($spring-green, .2);
   z-index: 10;
   animation: checkboxUncheckedAnimation $variable-burger-animation-time both;
 }
@@ -118,7 +122,7 @@ section{
   font-size: 36px;
   letter-spacing: .2em;
   font-weight: normal;
-  color: $navy;
+  color: $purple-grey;
   list-style: none;
   outline: 0;
 }
@@ -129,7 +133,7 @@ section{
 
 .menu__body-link:hover {
   display: block;
-  color: $bronze;
+  color: $cream-green;
   // animation: changeWidthOfElementAnimation $variable-burger-animation-time both;
 }
 

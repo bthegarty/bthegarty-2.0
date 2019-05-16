@@ -1,15 +1,23 @@
 .tabSection {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto;
 
   .tabs {
     display: flex;
     justify-content: flex-start;
-    width: 600px;
+    flex-direction: column;
 
-    button {
-      margin: 0 0 10px 30px;
-      padding: 0;
+    .tabButton-container {
+      display: flex;
+
+      button {
+        margin: 0 0 10px 30px;
+        padding: 0;
+
+        &.active {
+          color: $light-grey;
+        }
+      }
     }
   }
 
@@ -18,7 +26,7 @@
 
     .divider {
       height: 1px;
-      border-bottom: 1px solid $cyan-bright;
+      border-bottom: 1px solid $grey;
       margin: 20px 0;
       opacity: .6;
       width: 100%;
@@ -26,7 +34,7 @@
   }
 
   .tabContent {
-    margin: 15px 30px;
+    margin: 30px;
     display: none;
     flex-direction: column;
 
@@ -39,7 +47,7 @@
       width: max-content;
 
       &:after {
-        background-color: $cyan-bright;
+        background-color: $red;
         content: '';
         display: block;
         position: absolute;

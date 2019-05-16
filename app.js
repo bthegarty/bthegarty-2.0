@@ -18,8 +18,20 @@ app.use('/not-found',function(req, res){
   res.render('not-found');
 });
 
-app.use('/work',function(req, res){
-  res.render('work');
+app.use('/about',function(req, res){
+  res.render('about');
+});
+
+app.use('/projects',function(req, res){
+  res.render('projects');
+});
+
+app.use('/volunteer',function(req, res){
+  res.render('volunteer');
+});
+
+app.use('/contact',function(req, res){
+  res.render('contact');
 });
 
 app.listen(port,function(){
