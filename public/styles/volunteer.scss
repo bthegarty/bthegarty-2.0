@@ -1,0 +1,47 @@
+.vol-wrapper {
+  margin: 0 auto;
+
+  .vol-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+
+    .vol-desc {
+      margin: 0 25px;
+      max-width: 500px;
+
+      @media screen and (max-width: 879px) {
+        width: auto;
+      }
+    }
+
+    .vol-header {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 879px) {
+      display: block;
+    }
+  }
+
+  .vol-img {
+    border-radius: 250px;
+    max-width: 300px;
+
+    &.marist {
+      background-color: $red;
+      border: 1px solid $red;
+    }
+
+    &.hoby {
+      background-color: $blue;
+    }
+
+    @media screen and (max-width: 879px) {
+      margin: auto 25px;
+    }
+  }
+}

@@ -6,6 +6,7 @@
 @import 'pages';
 @import 'not-found';
 @import 'tabs';
+@import 'volunteer';
 
 $font: 'Ubuntu', sans-serif;
 
@@ -15,16 +16,10 @@ html {
 
 body {
   background-color: $white;
-  color: $grey;
+  color: $dark-grey;
   font-family: $font;
   font-size: 16px;
   margin: 0;
-}
-
-p {
-  font-size: 16px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 h1 {
@@ -46,7 +41,6 @@ h4 {
 // classes
 
 .container {
-  max-width: 1440px;
   padding: 0 25px;
 }
 

@@ -1,10 +1,10 @@
 div(class='container')
-  div(class='tabSection animate-reveal animate-first')
+  div(class='tabSection animate-reveal animate-third')
     -var tabId = [0]
     div(class='tabs')
       div(class='tabButton-container')
-        button(class='button' id='js-tabButton-1') Test
-        button(class='button' id='js-tabButton-2') Test
+        button(class='button' id='js-tabButton-1') amc
+        button(class='button' id='js-tabButton-2') mlb
       
       div(class='tabContent-container' id='js-tab-container')
         div(class='divider')
@@ -12,10 +12,17 @@ div(class='container')
         div(class='tabContent active' id='test1')
           //- div
             //- image
-          div(class='tab-header') mca
-          div la la la la la. la la la la la
+          div(class='tab-header') amc networks
+          div(class='tab-content')
+            div(class='tab-subheader')
+              img(class='tab-img' src='./styles/logos/shudder-logo-flat.png' alt='shudder')
+              img(class='tab-img' src='./styles/logos/sundance.png' alt='sundance now')
+            p(class='tab-desc') la la la la la. la la la la la
             //- text
         
         div(class='tabContent' id='test2')
-          div(class='tab-header') lmm - ab
-          div tests tests tests tests
+          div(class='tab-header') mlb - advanced media
+          div(class='tab-content')
+            div(class='tab-subheader')
+              img(class='tab-img' src='./styles/logos/mlb.gif' alt='mlb')
+            p(class='tab-desc') la la la la la. la la la la la

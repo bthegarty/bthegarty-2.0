@@ -1,0 +1,26 @@
+html(lang='en')
+  head
+    include ./includes/header.pug
+    
+  body
+    div(class='container desc-sec')
+      include ./includes/nav.pug
+      div(class='pt-page')
+        div(class='top-desc animate-reveal animate-first')
+          div(class='desc-header') Giving Back
+          div(class='desc-body') Test sentence for a little test description
+
+    div(class='container')
+      div(class='vol-wrapper animate-reveal animate-third')
+        div(class='vol-item')
+          img(class='vol-img hoby' src='./styles/logos/hobyguy.png' alt='test')
+          div(class='vol-desc')
+            div(class='vol-header') hugh o'brian youth leadership (hoby)
+            p Here's some text about some stuff about the places where stuff is stuffed into more stuff
+        div(class='vol-item')
+          img(class='vol-img marist' src='./styles/logos/seal.png' alt='test')
+          div(class='vol-desc')
+            div(class='vol-header') marist in the dominican republic
+            p Here's some text about some stuff about the places where stuff is stuffed into more stuff
+
+    include ./includes/footer.pug
