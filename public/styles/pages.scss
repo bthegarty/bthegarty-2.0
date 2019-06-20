@@ -1,5 +1,9 @@
 @import 'colors';
 
+.about {
+	padding: 50px auto;
+}
+
 .button {
 	background-color: transparent;
 	border: none;
@@ -58,29 +62,6 @@
 		position: absolute;
 		right: 0;
 	}
-
-	&.page-2 {
-		.button {
-			.back {
-				display: block;
-				position: fixed;
-				top: 15;
-				left: 15;
-				z-index: 1;
-			}
-		}
-
-		.pt-page-2 {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-		}
-
-		.button {
-			display: block;
-		}
-	}
 }
 
 .page-heading {
@@ -93,25 +74,23 @@
 }
 
 .job-tile-wrapper {
-	display: flex;
-	flex-flow: wrap;
+	// display: flex;
+	// flex-flow: wrap;
+	justify-content: center;
 	margin-bottom: 50px;
+	margin: 0 auto;
+	max-width: 1440px;
 
 	.job-tile {
-		width: calc((100% / 3) - 20px);
 		margin-bottom: 20px;
 
 		@media screen and (max-width: 1220px) {
-			width: calc((100% / 2) - 20px);
+
 		}
 
 		@media screen and (max-width: 879px) {
-			width: 100%;
-		}
-	}
 
-	@media screen and (max-width: 929px) {
-		justify-content: center;
+		}
 	}
 }
 
@@ -136,14 +115,15 @@
 	color: $white;
 
 	.top-desc {
-		margin: 125px auto;
+		margin: 90px auto 150px auto;
+		max-width: 500px;
 
 		.desc-header {
-			font-size: 35px;
 			font-size: 30px;
       letter-spacing: 1px;
       margin: 20px 0;
       position: relative;
+			text-shadow: 0 2px 2px rgba(0,0,0,.6);
       text-transform: uppercase;
       width: max-content;
 
@@ -159,10 +139,22 @@
         opacity: .8;
         z-index: -1;
       }
+
+			@media screen and (max-width: 879px) {
+				font-size: 25px
+			}
 		}
 
 		.desc-body {
 			font-size: 18px;
+
+			@media screen and (max-width: 879px) {
+				font-size: 16px;
+			}
 		}
 	}
+}
+
+.contact {
+	padding-top: 100px;
 }

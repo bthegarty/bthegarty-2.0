@@ -1,5 +1,5 @@
 .job-tile {
-  max-width: 400px;
+  max-width: 800px;
   margin-bottom: 30px;
   padding: 0 20px;
 
@@ -16,13 +16,13 @@
   }
 
   &-inner {
-    background: linear-gradient(to top, black, rgba(25, 0, 0, 0));
-    position: absolute;
-    color: $cream-green;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    // background: linear-gradient(to top, black, rgba(25, 0, 0, 0));
+    // position: absolute;
+    // color: $cream-green;
+    // bottom: 0;
+    // left: 0;
+    // height: 100%;
+    // width: 100%;
   }
 
   &-info {
@@ -43,8 +43,8 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 200ms ease-in-out;
-    background-color: rgba(0, 0, 0, .75);
+    // transition: opacity 200ms ease-in-out;
+    // background-color: rgba(0, 0, 0, .75);
 
     &:hover {
       opacity: .7;

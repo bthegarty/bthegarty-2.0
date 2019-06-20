@@ -1,0 +1,50 @@
+.about-me-container {
+  border-radius: 5px;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 3px 5px 63px 1px rgba(0, 0, 0, 0.6);
+
+  .fun-facts {
+    background-color: #af0000;
+    border-radius: 0 5px 5px 0px;
+    width: 100%;
+
+    .fact-head {
+      font-size: 80px;
+      font-weight: bold;
+      margin: -50px -45px;
+      text-shadow: 0 2px 2px rgba(0,0,0,.2);
+      text-transform: uppercase;
+    }
+
+    .fact {
+      color: white;
+      font-size: 18px;
+      margin: 50px 25px;
+
+      @media screen and (max-width: 879px) {
+        font-size: 14px;
+        margin: 25px 15px;
+      }
+    }
+
+    @media screen and (max-width: 879px) {
+      border-radius: 0 0 5px 5px;
+    }
+  }
+
+  .me {
+    max-width: 400px;
+    border-radius: 5px 0 0 5px;
+
+    @media screen and (max-width: 879px) {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 879px) {
+    flex-direction: column;
+  }
+}

@@ -1,3 +1,4 @@
+@import 'about';
 @import 'animate';
 @import 'header';
 @import 'footer';
@@ -15,11 +16,12 @@ html {
 }
 
 body {
-  background-color: $white;
+  background-color: $bone-grey;
   color: $dark-grey;
   font-family: $font;
   font-size: 16px;
   margin: 0;
+  min-height: 100vh;
 }
 
 h1 {
@@ -42,6 +44,10 @@ h4 {
 
 .container {
   padding: 0 25px;
+
+  &.about {
+    margin: 35px 0;
+  }
 }
 
 .center {
