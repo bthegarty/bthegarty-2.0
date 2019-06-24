@@ -158,3 +158,15 @@
 .contact {
 	padding-top: 100px;
 }
+
+.header {
+	margin: 15px auto;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&.jobs {
+		font-size: 22px;
+		letter-spacing: 1.2px;
+	}
+}

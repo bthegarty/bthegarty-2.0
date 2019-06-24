@@ -17,13 +17,6 @@
       }
     }
 
-    .vol-header {
-      margin: 15px auto;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
     @media screen and (max-width: 879px) {
       flex-direction: column;
     }
@@ -38,9 +31,7 @@
       border: 1px solid $red;
       transition: 1s ease-in-out;
 
-      &:hover {
-        background-color: $dark-grey;
-        border: 1px solid $dark-grey;
+      &:hover {        border: 1px solid $dark-grey;
         transition: 1s ease-in-out;
       }
     }
