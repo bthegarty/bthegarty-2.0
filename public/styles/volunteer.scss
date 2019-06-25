@@ -31,7 +31,9 @@
       border: 1px solid $red;
       transition: 1s ease-in-out;
 
-      &:hover {        border: 1px solid $dark-grey;
+      &:hover {
+        background-color: $dark-grey;
+        border: 1px solid $dark-grey;
         transition: 1s ease-in-out;
       }
     }

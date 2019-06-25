@@ -231,9 +231,32 @@ section {
   flex-direction: row-reverse; }
   .job-tile .job-img img {
     max-height: 450px; }
+    @media screen and (max-width: 879px) {
+      .job-tile .job-img img {
+        max-height: 300px; } }
   .job-tile-info {
     line-height: 1.6;
     margin: 20px 0; }
+    .job-tile-info-list {
+      display: flex;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-left: 15px; }
+      .job-tile-info-list .list-info {
+        margin-left: 5px;
+        font-weight: normal; }
+      .job-tile-info-list a {
+        margin-left: 5px;
+        font-weight: normal; }
+    .job-tile-info a {
+      color: #161f22; }
+      .job-tile-info a:hover {
+        color: #c80000; }
+  @media screen and (max-width: 879px) {
+    .job-tile {
+      align-items: center;
+      flex-direction: column; } }
 
 .about {
   padding: 50px auto; }
@@ -478,6 +501,7 @@ section {
       border: 1px solid #c80000;
       transition: 1s ease-in-out; }
       .vol-wrapper .vol-img.marist:hover {
+        background-color: #161f22;
         border: 1px solid #161f22;
         transition: 1s ease-in-out; }
     .vol-wrapper .vol-img.hoby {
