@@ -5,7 +5,6 @@
 }
 
 .button {
-	background-color: transparent;
 	border: none;
 	color: inherit;
 	cursor: pointer;
@@ -71,14 +70,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media screen and (max-width: 879px) {
+		margin-top: 35px;
+		font-size: 35px;
+	}
 }
 
 .job-tile-wrapper {
-	// display: flex;
-	// flex-flow: wrap;
 	justify-content: center;
 	margin-bottom: 50px;
-	margin: 0 auto;
 	max-width: 1440px;
 
 	.job-tile {
@@ -155,8 +156,77 @@
 	}
 }
 
+// contact page
+
 .contact {
-	padding-top: 100px;
+	margin: 75px auto;
+
+	.fun-facts {
+		background-color: $bone-grey;
+	}
+
+	.button-holder {
+		width: 100%;
+
+		.button {
+			background-color: $red;
+			border: 3px solid $dark-grey;
+			border-radius: 15px;
+			color: $bone-grey;
+			margin: 15px auto;
+			padding: 10px 35px;
+			width: max-content;
+			transition: .5s;
+
+			&:hover {
+				background-color: $dark-grey;
+				transition: .5s;
+			}
+
+			@media screen and (max-width: 879px) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.fact-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.contact-fact {
+		color: $dark-grey;
+		font-size: 25px;
+		line-height: 1.7;
+		margin: 50px 25px;
+
+		@media screen and (max-width: 879px) {
+			font-size: 20px;
+			margin: 35px 15px;
+		}
+	}
+
+	&-image {
+		max-width: 66.666%;
+
+		@media screen and (max-width: 879px) {
+			max-width: 100%;
+		}
+	}
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
+
+.img-curve {
+	border-radius: 5px 0 0 5px;
+
+	@media screen and (max-width: 879px) {
+		border-radius: 5px 5px 0 0;
+	}
 }
 
 .header {
@@ -169,4 +239,16 @@
 		font-size: 22px;
 		letter-spacing: 1.2px;
 	}
+}
+
+.sm {
+	max-width: 400px;
+}
+
+.md {
+	max-width: 800px;
+}
+
+.lg {
+	max-width: 1200px;
 }

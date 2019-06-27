@@ -11,7 +11,15 @@
       max-height: 450px;
 
       @media screen and (max-width: 879px) {
-        max-height: 300px;
+        max-width: 500px;
+      }
+
+      @media screen and (max-width: 479px) {
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 325px) {
+        max-width: 250px;
       }
     }
   }
@@ -35,6 +43,10 @@
       a {
         margin-left: 5px;
         font-weight: normal;
+      }
+
+      @media screen and (max-width: 479px) {
+        display: block;
       }
     }
 
