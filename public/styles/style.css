@@ -194,31 +194,67 @@ section {
   display: flex;
   justify-content: center; }
 
-/**
- *	Animations
- *
- *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
- */
-@keyframes checkboxCheckedAnimation {
-  50% {
-    width: 100vw;
-    height: 100vh; }
-  100% {
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0; } }
-@keyframes checkboxUncheckedAnimation {
-  0% {
-    width: 100vw;
-    height: 100vh; } }
-@keyframes changeWidthOfElementAnimation {
-  50% {
-    width: 0; }
-  100% {
-    width: 100%; } }
+.mobile-nav {
+  display: none;
+  position: relative;
+  top: 25px;
+  z-index: 1; }
+  .mobile-nav li {
+    margin: 35px;
+    text-align: center; }
+  .mobile-nav-input {
+    cursor: pointer;
+    height: 30px;
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    width: 35px;
+    z-index: 3; }
+    .mobile-nav-input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(0px, -5px);
+      transition: .5s;
+      background-color: #161f22;
+      z-index: 2; }
+    .mobile-nav-input:checked ~ span:nth-child(4) {
+      opacity: 0; }
+    .mobile-nav-input:checked ~ span:nth-child(3) {
+      background-color: #161f22;
+      transform: rotate(-45deg); }
+    .mobile-nav-input:checked ~ .mobile-list {
+      display: block; }
+  .mobile-nav span {
+    display: block;
+    background-color: #efefef;
+    border-radius: 5px;
+    height: 3px;
+    position: relative;
+    width: 35px;
+    transition: .5s; }
+    .mobile-nav span:first-child {
+      transform-origin: 0% 0%; }
+    .mobile-nav span:nth-child(2) {
+      transform-origin: 0% 100%; }
+    .mobile-nav span:nth-child(3) {
+      margin: 6px 0; }
+
+.mobile-list {
+  border-bottom: 3px solid #c80000;
+  position: absolute;
+  width: 100%;
+  background-color: #efefef;
+  margin: -50px 0 0 -25px;
+  padding: 25px;
+  list-style-type: none;
+  display: none; }
+  .mobile-list .mobile-item {
+    color: #161f22;
+    font-size: 22px;
+    text-decoration: none; }
+
 @media only screen and (min-width: 320px) and (max-width: 1020px) {
-  .menu {
-    display: block !important; }
+  .mobile-nav {
+    display: block; }
 
   .navbar {
     display: none; } }

@@ -170,43 +170,95 @@ section{
   }
 }
 
-/**
- *	Animations
- *
- *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
- */
-@keyframes checkboxCheckedAnimation {
-  50% {
-    width: 100vw;
-    height: 100vh;
+//- MOBILE MENU ROUND 2 BOIS
+//- LETS GET THIS BREADDD
+
+.mobile-nav {
+  display: none;
+  position: relative;
+  top: 25px;
+  z-index: 1;
+
+  li {
+    margin: 35px;
+    text-align: center;
   }
-  100% {
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0;
+
+  &-input {
+    cursor: pointer;
+    height: 30px;
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    width: 35px;
+    z-index: 3;
+
+    &:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(0px, -5px);
+      transition: .5s;
+      background-color: $dark-grey;
+      z-index: 2;
+    }
+
+    &:checked ~ span:nth-child(4) {
+      opacity: 0;
+    }
+
+    &:checked ~ span:nth-child(3){
+      background-color: $dark-grey;
+      transform: rotate(-45deg);
+    }
+
+    &:checked ~ .mobile-list {
+      display: block;
+    }
+  }
+
+  span {
+    display: block;
+    background-color: $bone-grey;
+    border-radius: 5px;
+    height: 3px;
+    position: relative;
+    width: 35px;
+    transition: .5s;
+
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    &:nth-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    &:nth-child(3) {
+      margin: 6px 0;
+    }
   }
 }
 
-@keyframes checkboxUncheckedAnimation {
-  0% {
-    width: 100vw;
-    height: 100vh;
-  }
-}
+.mobile-list {
+  border-bottom: 3px solid $red;
+  position: absolute;
+  width: 100%;
+  background-color: $bone-grey;
+  margin: -50px 0 0 -25px;
+  padding: 25px;
+  list-style-type: none;
+  display: none;
 
-@keyframes changeWidthOfElementAnimation {
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
+  .mobile-item {
+    color: $dark-grey;
+    font-size: 22px;
+    text-decoration: none;
   }
 }
 
 
 @media only screen and (min-width: 320px) and (max-width: 1020px) {
-  .menu{
-    display: block !important;
+  .mobile-nav{
+    display: block;
   }
   .navbar{
     display: none;
