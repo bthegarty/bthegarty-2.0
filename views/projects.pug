@@ -1,0 +1,18 @@
+html(lang='en')
+  head
+    include ./includes/header.pug
+    
+  body
+    div(class='container desc-sec')
+      include ./includes/nav.pug
+      div(class='pt-page')
+        div(class='top-desc animate-reveal animate-first')
+          div(class='desc-header') recent work
+          div(class='desc-body') I like to keep busy and I like to keep learning. Below are some of my projects.
+
+    div(class='container')
+      div(class='pt-page animate-reveal animate-third')
+        h1(class='page-heading') Explore My Portfolio
+        div(class='job-tile-wrapper')
+          include ./includes/job-tile.pug
+    include ./includes/footer.pug

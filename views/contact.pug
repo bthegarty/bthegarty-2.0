@@ -1,0 +1,25 @@
+html(lang='en')
+  head
+    include ./includes/header.pug
+    
+  body
+    div(class='container desc-sec')
+      include ./includes/nav.pug
+      div(class='pt-page')
+        div(class='top-desc animate-reveal animate-first')
+          div(class='desc-header') Contact me
+          div(class='desc-body') Sometimes you need a web developer, I get that. That's why I exist... probably.
+
+    div(class='container contact')
+      div(class='about-me-container animate-reveal animate-third lg')
+        div(class='contact-image')
+          img(class='img img-curve' src='./styles/logos/carry.jpg' alt='test')
+        div(class='fun-facts')
+          div(class='fact-container')
+            div(class='fact-head') Let's talk
+            div(class='contact-fact') Colaboration is important in every project. Send me an email and let's talk about what you're looking for.
+              div(class='button-holder')
+                a(class='button' href='mailto:bthegarty@gmail.com') Contact
+
+
+    include ./includes/footer.pug

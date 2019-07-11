@@ -1,0 +1,121 @@
+.tabSection {
+  max-width: 800px;
+  margin: 30px auto;
+
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .tabButton-container {
+      display: flex;
+
+      button {
+        margin: 0 0 10px 30px;
+        padding: 0;
+        background-color: transparent;
+
+        &.active {
+          color: $light-grey;
+        }
+
+        @media screen and (max-width: 879px) {
+          margin: 10px auto;
+        }
+      }
+      @media screen and (max-width: 879px) {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .tabContent-container {
+    width: 100%;
+
+    .divider {
+      height: 1px;
+      border-bottom: 1px solid $dark-grey;
+      margin: 20px 0;
+      opacity: .4;
+      width: 100%;
+    }
+  }
+
+  .tabContent {
+    margin: 30px;
+    display: none;
+    flex-direction: column;
+
+    .tab-header {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 20px 0;
+      position: relative;
+      text-shadow: 0 2px 2px rgba(0,0,0,.2);
+      text-transform: uppercase;
+      width: max-content;
+
+      &:after {
+        background-color: $light-grey;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 10px;
+        bottom: 2px;
+        right: -6px;
+        left: -6px;
+        opacity: .8;
+        z-index: -1;
+      }
+
+      @media screen and (max-width: 879px) {
+        display: none;
+  		}
+    }
+
+    .tab-content {
+      display: flex;
+
+      .tab-subheader {
+        border-right: 1px solid $dark-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 27px;
+        width: 100%;
+
+        @media screen and (max-width: 879px) {
+          border-right: none;
+          margin: 0;
+    		}
+
+        .tab-img {
+          max-width: 300px;
+          margin: 25px auto;
+
+          @media screen and (max-width: 879px) {
+            max-width: 200px;
+      		}
+        }
+      }
+
+      .tab-desc {
+        width: 100%;
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 879px) {
+        flex-direction: column;
+  		}
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    @media screen and (max-width: 879px) {
+      margin: 0;
+    }
+  }
+}

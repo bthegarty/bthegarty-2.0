@@ -1,0 +1,59 @@
+.vol-wrapper {
+  margin: 0 auto;
+
+  .vol-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+
+    .vol-desc {
+      margin: 0 25px;
+      max-width: 400px;
+
+      @media screen and (max-width: 879px) {
+        margin: 0;
+        width: auto;
+      }
+    }
+
+    @media screen and (max-width: 879px) {
+      flex-direction: column;
+    }
+  }
+
+  .vol-img {
+    border-radius: 250px;
+    max-width: 300px;
+
+    &.marist {
+      background-color: $red;
+      border: 1px solid $red;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        background-color: $dark-grey;
+        border: 1px solid $dark-grey;
+        transition: 1s ease-in-out;
+      }
+    }
+
+    &.hoby {
+      background-color: $blue;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        background-color: $glass-blue;
+        transition: 1s ease-in-out;
+      }
+    }
+
+    @media screen and (max-width: 879px) {
+      margin: auto 25px;
+    }
+
+    @media screen and (max-width: 325px) {
+      max-width: 250px;
+    }
+  }
+}

@@ -1,92 +1,60 @@
+@import 'about';
+@import 'animate';
 @import 'header';
 @import 'footer';
 @import 'colors';
+@import 'job-tile';
 @import 'pages';
-@import 'animate';
 @import 'not-found';
-@import 'nes';
+@import 'tabs';
+@import 'volunteer';
 
-$font: 'Roboto Condensed', sans-serif;
-$lobster: 'Lobster', cursive;
+$font: 'Ubuntu', sans-serif;
 
-body, html{
-  background-color: $navy;
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $bone-grey;
+  color: $dark-grey;
   font-family: $font;
   font-size: 16px;
   margin: 0;
+  min-height: 100vh;
 }
 
-p{
-  font-size: 16px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-h1{
+h1 {
   font-size: 75px;
 }
 
-h2{
+h2 {
   font-size: 45px;
 }
 
-h3{
+h3 {
   font-size: 35px;
 }
 
-h4{
+h4 {
   font-size: 25px;
 }
 
 // classes
 
-.main{
-  padding: 1em;
-}
+.container {
+  padding: 0 25px;
 
-.container{
-  padding-top: 2em; 
-}
-
-//fonts per section
-.flexin{
-  font-family: $lobster;
-}
-
-#welcome{
-  font-family: $lobster;
-}
-
-.section-1{
-  h3{
-    font-family: $lobster;
-  }
-}
-.section-2{
-  h3{
-    font-family: $lobster;
-  }
-}
-.section-3{
-  h3{
-    font-family: $lobster;
-  }
-}
-.ab-2-con{
-  h4{
-    font-family: $lobster;
+  &.about {
+    margin: 35px 0;
   }
 }
 
-#career-tag{
-  font-family: $lobster;
+.center {
+  margin: 0 auto;
 }
 
-.alert{
-  font-family: $lobster;
-  margin: 0;
+::selection {
+  background-color: $red;
+  color: $white;
 }
-
-// .job-title{
-//   font-family: $lobster;
-// }
