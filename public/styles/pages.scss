@@ -36,10 +36,10 @@
 .subheading {
 	font-size: 44px;
 	margin-top: 10px;
-	// border for something
-	// border: 8px solid;
-	// border-image: linear-gradient(to left, $red, $light-red, $light-grey, $white);
-	// border-image-slice: 30 30 30 30;
+
+	@media screen and (max-width: 879px) {
+		font-size: 30px;
+	}
 }
 
 .pt-page {
@@ -81,6 +81,7 @@
 	justify-content: center;
 	margin-bottom: 50px;
 	max-width: 1440px;
+	margin: auto; // large screen centering
 
 	.job-tile {
 		margin-bottom: 20px;
@@ -251,4 +252,10 @@
 
 .lg {
 	max-width: 1200px;
+}
+
+.heading {
+	@media screen and (max-width: 879px) {
+		font-size: 40px
+	}
 }
